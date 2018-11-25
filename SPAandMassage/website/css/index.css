@@ -85,15 +85,19 @@
 }
 #welcometxt
 {
+    width: 100%;
     display: inline-block;
     margin-top: 70px;
     font-size: calc(8px + 1.5vw);
 }
 #discover
 {
-   position: absolute;
-   bottom: 50px;
-   left: 38%;
+    width: 200px;
+    font-size: calc(10px + 1.5vw);
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 50px;
 }
 
 /* Small devices (large phones, 540px and up) */
