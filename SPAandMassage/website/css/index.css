@@ -1,56 +1,4 @@
 /*Extra small devices (small phones, 350px and down)*/
-.navbar
-{
-    width: 100%;
-    position: fixed;
-    background: rgb(219, 219, 219);
-    height: 50px;
-    padding-top: 5px;
-    text-align: center;
-}
-.navbar img
-{
-    width: 100px;
-}
-.clicker
-{
-    width: 70px;
-    height: 70px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 9999999;
-}
-.menu.icon
-{
-    color: rgb(37, 37, 37);
-    position: absolute;
-    right: 20px;
-    top: 25px;
-    width: 25px;
-    height: 2px;
-    background-color: rgb(37, 37, 37);
-}
-.menu.icon:before 
-{
-    content: '';
-    position: absolute;
-    top: -8px;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: rgb(37, 37, 37);
-}
-.menu.icon:after 
-{
-    content: '';
-    position: absolute;
-    top: 8px;
-    left: 0;
-    width: 25px;
-    height: 2px;
-    background-color: rgb(37, 37, 37);
-}
 .arrow-down.icon
 {
     display: inline-block;
@@ -62,7 +10,7 @@
     background-color: currentColor;
 }
 .arrow-down.icon:before
-  {
+{
     content: '';
     position: absolute;
     left: -5px;
@@ -72,7 +20,7 @@
     border-top: solid 1px currentColor;
     border-right: solid 1px currentColor;
     -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
+     transform: rotate(135deg);
 }  
 #tags
 {
@@ -114,6 +62,14 @@
     padding-top: 30px;
     height: 220px;
     background: rgb(94, 33, 33);
+}
+#welcomeimg2 h1
+{
+    font-size: calc(25px + 1.5vw);
+}
+#welcomepgh
+{
+    height: 1000px;
 }
 
 /* Small devices (large phones, 540px and up) */

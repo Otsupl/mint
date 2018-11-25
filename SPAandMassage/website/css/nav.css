@@ -1,0 +1,53 @@
+.navbar
+{
+    width: 100%;
+    position: fixed;
+    background: rgb(219, 219, 219);
+    height: 50px;
+    padding-top: 5px;
+    text-align: center;
+    z-index: 9999999999999999999999;
+}
+.navbar img
+{
+    width: 100px;
+}
+.clicker
+{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+}
+.menu.icon
+{
+    color: rgb(37, 37, 37);
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(37, 37, 37);
+}
+.menu.icon:before 
+{
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(37, 37, 37);
+}
+.menu.icon:after 
+{
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(37, 37, 37);
+}
