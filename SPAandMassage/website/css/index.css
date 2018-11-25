@@ -12,6 +12,15 @@
 {
     width: 100px;
 }
+.clicker
+{
+    width: 70px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+}
 .menu.icon
 {
     color: rgb(37, 37, 37);
@@ -98,6 +107,13 @@
     left: 50%;
     margin-left: -100px;
     bottom: 50px;
+}
+#welcomeimg2
+{
+    text-align: center;
+    padding-top: 30px;
+    height: 220px;
+    background: rgb(94, 33, 33);
 }
 
 /* Small devices (large phones, 540px and up) */
