@@ -21,7 +21,7 @@
     border-right: solid 1px currentColor;
     -webkit-transform: rotate(135deg);
      transform: rotate(135deg);
-}  
+}
 #tags
 {
     color: rgba(0, 0, 0, 0);
@@ -45,12 +45,12 @@
     width: 100%;
     display: inline-block;
     margin-top: 70px;
-    font-size: calc(8px + 1.5vw);
+    font-size: calc(20px + 1.5vw);
 }
 #discover
 {
     width: 200px;
-    font-size: calc(10px + 1.5vw);
+    font-size: calc(25px + 1.5vw);
     position: absolute;
     left: 50%;
     margin-left: -100px;
@@ -62,37 +62,50 @@
     padding-top: 30px;
     height: 220px;
     background: rgb(94, 33, 33);
+    font-size: calc(18px + 1.5vw);
 }
 #welcomeimg2 h1
 {
-    font-size: calc(25px + 1.5vw);
+    font-size: calc(38px + 1.5vw);
 }
 #welcomepgh
 {
     height: 1000px;
+    text-align: center;
+}
+#welcomepgh h1
+{
+  font-size: calc(35px + 1.5vw);
+}
+#welcomepgh p
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: calc(14px + 1.5vw);
 }
 
 /* Small devices (large phones, 540px and up) */
 @media only screen and (min-width: 540px) {
-    
-} 
+
+}
 /* Small devices (portrait tablets, landscape phones, 640px and up) */
 @media only screen and (min-width: 640px) {
 
-} 
+}
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (min-width: 800px) {
-    
-} 
+
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-   
-} 
+
+}
 
 /* Extra enormous devices (TV, 1700px and up) */
 @media only screen and (min-width: 1700px) {
-    
+
 
 }
