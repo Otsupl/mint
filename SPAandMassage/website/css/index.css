@@ -70,7 +70,6 @@
 }
 #welcomepgh
 {
-    height: 1000px;
     text-align: center;
 }
 #welcomepgh h1
@@ -84,7 +83,35 @@
   margin-right: auto;
   font-size: calc(14px + 1.5vw);
 }
-
+#welcomeimg3
+{
+  margin-top: 27px;
+  background: red;
+  height: 150px;
+  width: 100%;
+}
+#welcomepgh2
+{
+ text-align: center;
+ font-size: calc(20px + 1.5vw);
+}
+#welcomepgh2 p
+{
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.aboutimg
+{
+  height: 150px;
+  background: black;
+}
+.abouttxt
+{
+  margin: 27px auto 27px auto;
+  text-align: center;
+  font-size: calc(20px + 1.5vw);
+}
 /* Small devices (large phones, 540px and up) */
 @media only screen and (min-width: 540px) {
 

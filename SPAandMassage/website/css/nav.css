@@ -6,11 +6,24 @@
     height: 50px;
     padding-top: 5px;
     text-align: center;
-    z-index: 9999999999999999999999;
+    z-index: 999999;
 }
 .navbar img
 {
     width: 100px;
+}
+.langchange
+{
+  width: 20px;
+  height: 25px;
+  background: #181919;
+  position: fixed;
+  z-index: 9999999;
+  left: 20px;
+  font-size: calc(8px + 1.2vw);
+  text-align: center;
+  color: white;
+  padding-top: 5px;
 }
 .clicker
 {
@@ -31,7 +44,7 @@
     height: 2px;
     background-color: rgb(37, 37, 37);
 }
-.menu.icon:before 
+.menu.icon:before
 {
     content: '';
     position: absolute;
@@ -41,7 +54,7 @@
     height: 2px;
     background-color: rgb(37, 37, 37);
 }
-.menu.icon:after 
+.menu.icon:after
 {
     content: '';
     position: absolute;
