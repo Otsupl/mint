@@ -101,6 +101,37 @@
   margin-left: auto;
   margin-right: auto;
 }
+#newsletter
+{
+  height: 250px;
+  background: rgb(50,52,56);
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+}
+#newsletter input
+{
+  width: 70%;
+  height: 40px;
+  border: 0;
+  outline:0;
+  border-radius: 2px;
+  padding: 5px;
+  font-size: calc(15px + 1.5vw);
+  margin-bottom: 10px;
+  background: rgb(95,98,102);
+  color: whitesmoke;
+}
+::placeholder
+{
+  color: rgb(170,173,181);
+}
+#nlbutton
+{
+  background: rgb(231, 231, 231) !important;
+  margin-top: 10px;
+  color: rgb(95,98,102) !important;
+}
 .aboutimg
 {
   height: 150px;
