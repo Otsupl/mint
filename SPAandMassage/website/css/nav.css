@@ -103,6 +103,13 @@ footer
     padding-top: 10px;
     text-align: center;
 }
+footer a
+{
+    text-decoration: none;
+    color: black;
+    border: 1px rgb(199, 199, 199) solid;
+    padding: 10px;
+}
 .footlogo img
 {
     width: 70px;
@@ -123,7 +130,7 @@ footer
 {
     width: 50%;
     float: left;
-    font-size: 14px;
+    font-size: calc(10px + 1.2vw);
 }
 .watermark
 {
@@ -153,4 +160,8 @@ footer
 
 .sidenav a:hover {
     color: #616060;
+}
+#swipeup
+{
+    height: 50%;
 }
