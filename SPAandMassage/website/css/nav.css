@@ -64,3 +64,36 @@
     height: 2px;
     background-color: rgb(37, 37, 37);
 }
+footer
+{
+    height: 150px;
+    padding-top: 10px;
+    text-align: center;
+}
+.footlogo img
+{
+    width: 70px;
+}
+.footinfo
+{
+    margin-top: -10px;
+}
+.footinfo a
+{
+    font-size: calc(20px + 0.6vw);;
+}
+.footinfo h1
+{
+    font-size: calc(25px + 0.8vw);
+}
+.footpart
+{
+    width: 50%;
+    float: left;
+    font-size: 14px;
+}
+.watermark
+{
+    padding: 20px;
+    border-top: #d1d1d1 1px dashed;
+}
