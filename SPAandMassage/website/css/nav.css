@@ -1,3 +1,5 @@
+.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+    transition: all 0.4s ease;}
 .navbar
 {
     width: 100%;
@@ -63,6 +65,37 @@
     width: 25px;
     height: 2px;
     background-color: rgb(37, 37, 37);
+}
+.close.icon:after 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background-color: rgb(37, 37, 37);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.close.icon:before 
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background-color: rgb(37, 37, 37);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.close.icon 
+{
+    color: rgb(37, 37, 37);
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    width: 28px;
+    height: 28px;
 }
 footer
 {

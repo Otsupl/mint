@@ -14,3 +14,8 @@ function closeNav() {
     document.getElementById("Sidenav").style.height = "0";
     opened=false;
 }
+$('.icon').click(function(){
+    $(this)
+      .toggleClass('menu')
+      .toggleClass('close');
+  })
