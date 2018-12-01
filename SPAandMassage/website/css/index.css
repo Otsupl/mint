@@ -42,10 +42,10 @@
 }
 #welcometxt
 {
-    width: 100%;
+    width: 90%;
     display: inline-block;
     margin-top: 70px;
-    font-size: calc(20px + 1.5vw);
+    font-size: calc(18px + 1.5vw);
 }
 #discover
 {
