@@ -39,6 +39,7 @@
     height: calc(100vh - 50px);
     margin-top: 50px;
     text-align: center;
+    border-bottom: rgb(190, 190, 190) 1px solid;
 }
 #welcometxt
 {
@@ -61,8 +62,8 @@
     text-align: center;
     padding-top: 30px;
     height: 220px;
-    background: rgb(94, 33, 33);
     font-size: calc(18px + 1.5vw);
+    border-bottom: rgb(190, 190, 190) 1px solid;
 }
 #welcomeimg2 h1
 {
@@ -86,14 +87,17 @@
 #welcomeimg3
 {
   margin-top: 27px;
-  background: red;
   height: 150px;
+  text-align: center;
+  line-height: 150px;
   width: 100%;
+  border-top: rgb(190, 190, 190) 1px solid;
 }
 #welcomepgh2
 {
  text-align: center;
  font-size: calc(20px + 1.5vw);
+ border-top: rgb(190, 190, 190) 1px solid;
 }
 #welcomepgh2 p
 {
@@ -135,13 +139,16 @@
 .aboutimg
 {
   height: 150px;
-  background: black;
+  text-align: center;
+  line-height: 150px;
+  border-top: rgb(190, 190, 190) 1px solid;
 }
 .abouttxt
 {
-  margin: 27px auto 27px auto;
+  padding: 15px !important;
   text-align: center;
-  font-size: calc(20px + 1.5vw);
+  font-size: calc(36px + 1.5vw);
+  border-top: rgb(190, 190, 190) 1px solid;
 }
 /* Small devices (large phones, 540px and up) */
 @media only screen and (min-width: 540px) {
