@@ -1,5 +1,5 @@
 /*Extra small devices (small phones, 350px and down)*/
-.arrow-down.icon
+.arrow-down
 {
     display: inline-block;
     color: #000;
@@ -9,7 +9,7 @@
     height: 16px;
     background-color: currentColor;
 }
-.arrow-down.icon:before
+.arrow-down:before
 {
     content: '';
     position: absolute;
@@ -45,8 +45,8 @@
 {
     width: 90%;
     display: inline-block;
-    margin-top: 70px;
-    font-size: calc(16px + 1.5vw);
+    margin-top: 20px;
+    font-size: calc(10px + 1.5vw + 0.3vh);
 }
 #discover
 {
@@ -61,7 +61,7 @@
 {
     text-align: center;
     padding-top: 30px;
-    height: 220px;
+    height: calc(220px + 20vw);
     font-size: calc(18px + 1.5vw);
     border-bottom: rgb(190, 190, 190) 1px solid;
 }
@@ -72,16 +72,15 @@
 #welcomepgh
 {
     text-align: center;
+    padding: calc(10px + 4vw) calc(5px + 2vw) calc(10px + 4vw) calc(5px + 2vw);
 }
 #welcomepgh h1
 {
-  font-size: calc(35px + 1.5vw);
+  font-size: calc(30px + 1.5vw);
 }
 #welcomepgh p
 {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: calc(15px + 5vw) calc(15px + 5vw) calc(15px + 5vw) calc(15px + 5vw);
   font-size: calc(14px + 1.5vw);
 }
 #welcomeimg3
@@ -138,14 +137,14 @@
 }
 .aboutimg
 {
-  height: 150px;
+  height: calc(150px + 20vw);
+  line-height: calc(150px + 20vw);
   text-align: center;
-  line-height: 150px;
   border-top: rgb(190, 190, 190) 1px solid;
 }
 .abouttxt
 {
-  padding: 15px !important;
+  padding: calc(15px + 1vw) 0 calc(15px + 1vw) 0 !important;
   text-align: center;
   font-size: calc(36px + 1.5vw);
   border-top: rgb(190, 190, 190) 1px solid;
