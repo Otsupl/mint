@@ -97,46 +97,6 @@
     width: 28px;
     height: 28px;
 }
-footer
-{
-    height: 150px;
-    padding-top: 10px;
-    text-align: center;
-}
-footer a
-{
-    text-decoration: none;
-    color: black;
-    border: 1px rgb(199, 199, 199) solid;
-    padding: 10px;
-}
-.footlogo img
-{
-    width: 70px;
-}
-.footinfo
-{
-    margin-top: -10px;
-}
-.footinfo a
-{
-    font-size: calc(20px + 0.6vw);;
-}
-.footinfo h1
-{
-    font-size: calc(25px + 0.8vw);
-}
-.footpart
-{
-    width: 50%;
-    float: left;
-    font-size: calc(10px + 1.2vw);
-}
-.watermark
-{
-    padding: 20px;
-    border-top: #d1d1d1 1px dashed;
-}
 .sidenav {
     height: 0; 
     width: 100%; 
@@ -152,7 +112,7 @@ footer a
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: calc(25px + 1.5vw);
     color: #424242;
     display: block;
     transition: 0.3s;

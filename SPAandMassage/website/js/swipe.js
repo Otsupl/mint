@@ -65,8 +65,3 @@ class Swipe {
         }.bind(this), false);
     }
 }
-var swiper = new Swipe('#welcomeimg');
-swiper.onUp(function() { 
-    window.scroll({ top: document.getElementById("welcomeimg").offsetHeight, left: 0, behavior: 'smooth' });
- });
-swiper.run();
