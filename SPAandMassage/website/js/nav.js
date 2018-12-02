@@ -8,13 +8,11 @@ document.getElementById("clicker").addEventListener("click", event => {
   });
 function openNav() {
     document.getElementById("Sidenav").style.height = "100%";
-    document.body.style.overflow = "hidden";
     opened=true;
 }
 function closeNav() {
     document.getElementById("Sidenav").style.height = "0";
     setTimeout(() => {
-      document.body.style.overflow = "scroll";
     }, 200);
     opened=false;
 }
