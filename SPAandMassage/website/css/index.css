@@ -2,11 +2,12 @@
 html
 {
   scroll-behavior: smooth;
+  color: rgb(65, 65, 65);
 }
 .arrow-down
 {
     display: inline-block;
-    color: #000;
+    color: rgb(255, 255, 255);
     position: absolute;
     margin-top: 2px;
     width: 1px;
@@ -43,14 +44,21 @@ html
     height: calc(100vh - 50px);
     margin-top: 50px;
     text-align: center;
+    mix-blend-mode: exclusion;
     border-bottom: rgb(190, 190, 190) 1px solid;
+    background-image: url(../img/welcomeimg.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 #welcometxt
 {
     width: 90%;
     display: inline-block;
-    margin-top: 20px;
+    margin-top: calc(20px + 1.5vw + 0.3vh);
     font-size: calc(10px + 1.5vw + 0.3vh);
+    color: #FFF;
+    mix-blend-mode: hard-light;
 }
 #discover
 {
@@ -60,18 +68,31 @@ html
     left: 50%;
     margin-left: -100px;
     bottom: 50px;
+    color: rgba(255, 255, 255, 0.562);
 }
 #welcomeimg2
 {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 15px;
     height: calc(220px + 20vw);
     font-size: calc(18px + 1.5vw);
+    color: #FFF;
     border-bottom: rgb(190, 190, 190) 1px solid;
+    background-image: url(../img/welcomeimg2.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 #welcomeimg2 h1
 {
     font-size: calc(38px + 1.5vw);
+    mix-blend-mode: soft-light;
+    margin-bottom: 0;
+}
+#wi2st
+{
+    font-size: calc(20px + 1vw);
+    mix-blend-mode: soft-light;
 }
 #welcomepgh
 {
@@ -89,18 +110,17 @@ html
 }
 #welcomeimg3
 {
-  margin-top: 27px;
   height: 150px;
-  text-align: center;
-  line-height: 150px;
   width: 100%;
-  border-top: rgb(190, 190, 190) 1px solid;
+  background-image: url(../img/img3.jp2);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 #welcomepgh2
 {
  text-align: center;
  font-size: calc(20px + 1.5vw);
- border-top: rgb(190, 190, 190) 1px solid;
 }
 #welcomepgh2 p
 {
@@ -126,6 +146,7 @@ html
   margin-bottom: 10px;
   background: rgb(95,98,102);
   color: whitesmoke;
+  transition: 0.4s;
 }
 ::placeholder
 {
@@ -142,14 +163,26 @@ html
   height: calc(150px + 20vw);
   line-height: calc(150px + 20vw);
   text-align: center;
-  border-top: rgb(190, 190, 190) 1px solid;
+}
+#aboutimg1
+{
+  background-image: url(../img/lodz.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+#aboutimg2
+{
+  background-image: url(../img/aboutimg2.jpg);
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
 }
 .abouttxt
 {
   padding: calc(15px + 1vw) 0 calc(15px + 1vw) 0 !important;
   text-align: center;
   font-size: calc(36px + 1.5vw);
-  border-top: rgb(190, 190, 190) 1px solid;
 }
 /* Small devices (large phones, 540px and up) */
 @media only screen and (min-width: 540px) {
@@ -157,16 +190,20 @@ html
 }
 /* Small devices (portrait tablets, landscape phones, 640px and up) */
 @media only screen and (min-width: 640px) {
-
+  #newsletter input
+  {
+    width: 50%;
+  }
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (min-width: 800px) {
-
+  
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
 
 }
 
