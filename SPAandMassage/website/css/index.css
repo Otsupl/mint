@@ -48,7 +48,6 @@ html
     height: calc(100vh - 50px);
     margin-top: 50px;
     text-align: center;
-    mix-blend-mode: exclusion;
     border-bottom: rgb(190, 190, 190) 1px solid;
     background-image: url(../img/welcomeimg.jpg);
     overflow: hidden;
@@ -202,7 +201,7 @@ html
 
 /* Medium devices (landscape tablets, 800px and up) */
 @media only screen and (min-width: 800px) {
-  
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -212,6 +211,16 @@ html
     margin-top: 0;
     height: 100vh;
   }
+  #discover
+  {
+    transition: 0.4s;
+  }
+  #discover:hover
+  {
+      cursor: pointer;
+      color: rgb(209, 255, 223,1);
+      bottom: 60px;
+  }
   .desktopnav
   {
     display: block;
@@ -220,6 +229,19 @@ html
     width: 100%;
     margin-top: 60vh;
     font-size: 50px;
+  }
+  .desktopnav a
+  {
+    color: rgb(227, 228, 229,0.6);
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s;
+  }
+
+  .desktopnav a:hover
+  {
+    color: rgb(209, 255, 223,1);
+    letter-spacing: 2px;
   }
 }
 
