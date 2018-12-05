@@ -1,4 +1,4 @@
-.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after { 
+.icon, .icon:before, .icon:after, .icon i, .icon i:before, .icon i:after {
     transition: all 0.4s ease;}
 .navbar
 {
@@ -35,6 +35,7 @@
     top: 0;
     right: 0;
     z-index: 9999999;
+    cursor: pointer;
 }
 .menu.icon
 {
@@ -66,7 +67,7 @@
     height: 2px;
     background-color: rgb(37, 37, 37);
 }
-.close.icon:after 
+.close.icon:after
 {
     content: '';
     position: absolute;
@@ -77,7 +78,7 @@
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.close.icon:before 
+.close.icon:before
 {
     content: '';
     position: absolute;
@@ -88,7 +89,7 @@
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
-.close.icon 
+.close.icon
 {
     color: rgb(37, 37, 37);
     position: absolute;
@@ -98,15 +99,15 @@
     height: 28px;
 }
 .sidenav {
-    height: 0; 
-    width: 100%; 
-    position: fixed; 
-    z-index: 9999; 
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
     top: 0;
     left: 0;
     background-color: rgb(219, 219, 219);
-    overflow: hidden; 
-    padding-top: 60px; 
+    overflow: hidden;
+    padding-top: 60px;
     transition: 0.5s;
 }
 .sidenav a {
@@ -120,6 +121,7 @@
 
 .sidenav a:hover {
     color: #616060;
+    margin-left: 30px;
 }
 #swipeup
 {
@@ -138,4 +140,4 @@
     {
         display: none;
     }
-} 
+}

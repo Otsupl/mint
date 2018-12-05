@@ -42,26 +42,14 @@ html
     -ms-user-select: none;
     user-select: none;
 }
-#welcomeimg
+#indexwelcomeimg
 {
-    width: 100%;
-    height: calc(100vh - 50px);
-    margin-top: 50px;
-    text-align: center;
-    border-bottom: rgb(190, 190, 190) 1px solid;
-    background-image: url(../img/welcomeimg.jpg);
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+  background-image: url(../img/welcomeimg.jpg);
 }
-#welcometxt
+#indexwelcometxt
 {
-    width: 90%;
-    display: inline-block;
-    margin-top: calc(20px + 1.5vw + 0.3vh);
-    font-size: calc(10px + 1.5vw + 0.3vh);
-    color: #FFF;
-    mix-blend-mode: hard-light;
+  margin-top: calc(20px + 1.5vw + 0.3vh);
+  font-size: calc(10px + 1.5vw + 0.3vh);
 }
 #discover
 {
@@ -241,7 +229,7 @@ html
   .desktopnav a:hover
   {
     color: rgb(209, 255, 223,1);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
 
