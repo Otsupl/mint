@@ -64,10 +64,9 @@ html
 #welcomeimg2
 {
     text-align: center;
-    padding-top: 15px;
     height: calc(220px + 20vw);
     font-size: calc(18px + 1.5vw);
-    color: #FFF;
+    color: rgb(255, 255, 255);
     border-bottom: rgb(190, 190, 190) 1px solid;
     background-image: url(../img/welcomeimg2.jpg);
     overflow: hidden;
@@ -76,7 +75,7 @@ html
 }
 #welcomeimg2 h1
 {
-    font-size: calc(38px + 1.5vw);
+    font-size: calc(48px + 3.5vw);
     mix-blend-mode: soft-light;
     margin-bottom: 0;
 }
@@ -92,16 +91,16 @@ html
 }
 #welcomepgh h1
 {
-  font-size: calc(30px + 1.5vw);
+  font-size: calc(30px + 3.5vw);
 }
 #welcomepgh p
 {
-  padding: calc(15px + 5vw) calc(15px + 5vw) calc(15px + 5vw) calc(15px + 5vw);
-  font-size: calc(14px + 1.5vw);
+  padding: calc(15px + 5vw) calc(15px + 3vw) calc(15px + 5vw) calc(15px + 3vw);
+  font-size: calc(14px + 2.5vw);
 }
 #welcomeimg3
 {
-  height: 150px;
+  height: calc(150px + 25vw);
   width: 100%;
   background-image: url(../img/img3.jp2);
   overflow: hidden;
@@ -111,7 +110,7 @@ html
 #welcomepgh2
 {
  text-align: center;
- font-size: calc(20px + 1.5vw);
+ font-size: calc(20px + 2.5vw);
 }
 #welcomepgh2 p
 {
@@ -119,16 +118,20 @@ html
 }
 #newsletter
 {
-  height: 300px;
+  height: calc(150px + 30vh);
   background: rgb(50,52,56);
   color: white;
   text-align: center;
   padding-top: 5px;
 }
+#newsletter h1 
+{
+  font-size: calc(20px + 2.5vw);
+}
 #newsletter input
 {
   width: 70%;
-  height: 40px;
+  height: calc(40px + 2.5vw);;
   border: 0;
   outline:0;
   border-radius: 2px;
@@ -139,6 +142,18 @@ html
   color: whitesmoke;
   transition: 0.4s;
 }
+#newsletter input[type="submit"]
+{
+  background: rgb(231, 231, 231) !important;
+  margin-top: 10px;
+  color: rgb(95,98,102) !important;
+}
+#newsletter input[type="submit"]:hover
+{
+  background: white !important;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
 #email
 {
   width: 100%;
@@ -147,28 +162,15 @@ html
 {
   color: rgb(170,173,181);
 }
-#nlbutton
-{
-  background: rgb(231, 231, 231) !important;
-  margin-top: 10px;
-  color: rgb(95,98,102) !important;
-}
+
 .aboutimg
 {
-  height: calc(150px + 20vw);
-  line-height: calc(150px + 20vw);
+  height: calc(150px + 30vw);
   text-align: center;
 }
 #aboutimg1
 {
   background-image: url(../img/lodz.jpg);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-#aboutimg2
-{
-  background-image: url(../img/aboutimg2.jpg);
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -244,6 +246,36 @@ html
   {
     width: 25%;
     height: 80px;
+  }
+  #welcomeimg3
+  {
+    width: 50%;
+    float: left;
+  }
+  #welcomepgh2
+  {
+    vertical-align: middle;
+    float: left;
+    width: 50%;
+  }
+  #aboutimg1
+  {
+    width: 50%;
+    float: right;
+  }
+  .abouttxt
+  {
+    vertical-align: middle;
+    float: left;
+    width: 50%;
+  }
+  .abouttxt p 
+  {
+    padding-top: 20%;
+  }
+  #welcomepgh2 p
+  {
+    padding: calc(8px + 1vw) calc(8px + 5vw) calc(8px + 1vw) calc(8px + 5vw);
   }
 }
 
