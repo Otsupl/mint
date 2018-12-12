@@ -3,8 +3,7 @@ html{color:#222;font-size:1em;line-height:1.4;background: rgb(231, 231, 231); fo
 .welcomeimg
 {
     width: 100%;
-    height: calc(100vh - 50px);
-    margin-top: 50px;
+    height: 100vh;
     text-align: center;
     border-bottom: rgb(190, 190, 190) 1px solid;
     overflow: hidden;

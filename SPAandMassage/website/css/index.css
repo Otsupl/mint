@@ -4,10 +4,6 @@ html
   scroll-behavior: smooth;
   color: rgb(65, 65, 65);
 }
-.desktopnav
-{
-  display: none;
-}
 .arrow-down
 {
     display: inline-block;
@@ -48,8 +44,12 @@ html
 }
 #indexwelcometxt
 {
-  margin-top: calc(20px + 1.5vw + 0.3vh);
+  margin-top: calc(20px - 15vw + 60vh);
   font-size: calc(10px + 1.5vw + 0.3vh);
+}
+#iwtp
+{
+  color: rgb(255, 201, 130);
 }
 #discover
 {
@@ -215,29 +215,6 @@ html
       color: rgb(209, 255, 223,1);
       bottom: 60px;
   }
-  .desktopnav
-  {
-    display: block;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    margin-top: 60vh;
-    font-size: 50px;
-  }
-  .desktopnav a
-  {
-    color: rgb(227, 228, 229,0.6);
-    text-decoration: none;
-    margin-right: 15px;
-    transition: 0.3s;
-  }
-
-  .desktopnav a:hover
-  {
-    color: rgb(209, 255, 223,1);
-    letter-spacing: 1px;
-  }
-
   #newsletter input 
   {
     margin: 20px;
