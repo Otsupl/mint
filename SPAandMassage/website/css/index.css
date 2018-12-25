@@ -61,24 +61,6 @@ html
     bottom: 50px;
     color: rgba(255, 255, 255, 0.562);
 }
-#welcomeimg2
-{
-    text-align: center;
-    height: calc(220px + 20vw);
-    font-size: calc(18px + 1.5vw);
-    color: rgb(255, 255, 255);
-    border-bottom: rgb(190, 190, 190) 1px solid;
-    background-image: url(../img/welcomeimg2.jpg);
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
-#welcomeimg2 h1
-{
-    font-size: calc(48px + 3.5vw);
-    mix-blend-mode: soft-light;
-    margin-bottom: 0;
-}
 #wi2st
 {
     font-size: calc(20px + 1vw);
@@ -116,44 +98,7 @@ html
 {
   padding: calc(8px + 5vw) calc(8px + 5vw) calc(8px + 5vw) calc(8px + 5vw);
 }
-#newsletter
-{
-  height: calc(150px + 30vh);
-  background: rgb(50,52,56);
-  color: white;
-  text-align: center;
-  padding-top: 5px;
-}
-#newsletter h1 
-{
-  font-size: calc(20px + 2.5vw);
-}
-#newsletter input
-{
-  width: 70%;
-  height: calc(40px + 2.5vw);;
-  border: 0;
-  outline:0;
-  border-radius: 2px;
-  padding: 5px;
-  font-size: calc(15px + 1.5vw);
-  margin-bottom: 10px;
-  background: rgb(95,98,102);
-  color: whitesmoke;
-  transition: 0.4s;
-}
-#newsletter input[type="submit"]
-{
-  background: rgb(231, 231, 231) !important;
-  margin-top: 10px;
-  color: rgb(95,98,102) !important;
-}
-#newsletter input[type="submit"]:hover
-{
-  background: white !important;
-  cursor: pointer;
-  letter-spacing: 1px;
-}
+
 #email
 {
   width: 100%;
@@ -161,19 +106,6 @@ html
 ::placeholder
 {
   color: rgb(170,173,181);
-}
-
-.aboutimg
-{
-  height: calc(150px + 30vw);
-  text-align: center;
-}
-#aboutimg1
-{
-  background-image: url(../img/lodz.jpg);
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
 }
 .abouttxt
 {
@@ -187,10 +119,7 @@ html
 }
 /* Small devices (portrait tablets, landscape phones, 640px and up) */
 @media only screen and (min-width: 640px) {
-  #newsletter input
-  {
-    width: 50%;
-  }
+
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
@@ -214,15 +143,6 @@ html
       cursor: pointer;
       color: rgb(209, 255, 223,1);
       bottom: 60px;
-  }
-  #newsletter input 
-  {
-    margin: 20px;
-  }
-  #newsletter input[type="submit"] 
-  {
-    width: 25%;
-    height: 80px;
   }
   #welcomeimg3
   {
