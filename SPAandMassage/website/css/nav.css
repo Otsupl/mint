@@ -7,7 +7,7 @@
     padding: 10px;
     color:rgb(141, 141, 141);
     z-index: 100;
-    transition: 0.3s;
+    transition: 0.5s;
 	position:fixed;
 	text-align:center;
 }
@@ -18,7 +18,7 @@
 
 #logo
 {
-    transition: 0.3s;
+    transition: 0.5s;
     position:fixed;
     left:52%; /*2, żeby zrekompensować pustkę przy literze "t"*/
     transform:translate(-50%,0);
@@ -31,7 +31,7 @@
 
 #logo img
 {
-    transition: 0.3s;
+    transition: 0.5s;
 	width:100px;
 }
 .nav-small #logo img
@@ -60,7 +60,7 @@
 	z-index: 112;
 	height:30px;
 	width: 30px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .nav-small #outerburger
 {
@@ -145,7 +145,7 @@
     text-decoration: none;
     font-size: calc(20px + 1.5vw);
     display: block;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 #menu a:hover {
@@ -169,7 +169,7 @@
 	#menu
 	{
 		height: 50px;
-		width: 80%;
+		width: 80% !important;
 		margin:auto;
 		position: relative;
 		z-index: 11;
@@ -185,7 +185,7 @@
 	#menu>li
 	{
 		padding:5px 20px;
-		transition: 0.3s;
+		transition: 0.5s;
 	}
 	#menu>li:nth-child(1), #menu>li:nth-child(2)
 	{
