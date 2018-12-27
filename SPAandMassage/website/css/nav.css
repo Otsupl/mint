@@ -19,7 +19,9 @@
 #logo
 {
     transition: 0.3s;
-    display: inline-block;
+    position:fixed;
+    left:52%; /*2, żeby zrekompensować pustkę przy literze "t"*/
+    transform:translate(-50%,0);
     padding:20px 0 20px 0;
 }
 .nav-small #logo
@@ -153,6 +155,53 @@
 {
     width:250px;
 }
-@media only screen and (min-width: 992px) {
-  
+@media only screen and (min-width: 992px)
+{
+	#navbar:hover
+	{
+		background-color:rgba(255, 255, 255, 0.833);
+	}
+	#nav::after
+		{clear:both}
+
+	#outerburger
+		{display:none}
+	#menu
+	{
+		height: 50px;
+		width: 80%;
+		margin:auto;
+		position: relative;
+		z-index: 11;
+		background-color: transparent;
+		top: unset;
+		right: unset;
+		padding: 0;
+	}
+	.nav-small #menu
+	{
+		width: 70%;
+	}
+	#menu>li
+	{
+		padding:5px 20px;
+		transition: 0.3s;
+	}
+	#menu>li:nth-child(1), #menu>li:nth-child(2)
+	{
+		float:left;
+	}
+	#menu>li:nth-child(3), #menu>li:nth-child(4)
+	{
+		float:right;
+	}
+	#menu a {
+		padding: 0;
+		line-height: 60px;
+		font-size:25px;
+	}
+	.nav-small #menu a {
+		font-size:20px;
+		line-height: 40px;
+	}
 }
