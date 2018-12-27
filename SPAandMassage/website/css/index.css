@@ -4,6 +4,10 @@ html
   scroll-behavior: smooth;
   color: rgb(65, 65, 65);
 }
+h1
+{
+  font-weight: 400;
+}
 .arrow-down
 {
     display: inline-block;
@@ -40,16 +44,16 @@ html
 }
 #indexwelcomeimg
 {
-  background-image: url(../img/welcomeimg.jpg);
+  background-image: url(../img/welcomeimg2.jpg);
 }
 #indexwelcometxt
 {
-  margin-top: calc(20px - 15vw + 60vh);
+  margin-top: calc(35vh - 12vw);
   font-size: calc(10px + 1.5vw + 0.3vh);
 }
 #iwtp
 {
-  color: rgb(255, 201, 130);
+  color: rgba(255, 201, 130, 0.55);
 }
 #discover
 {
