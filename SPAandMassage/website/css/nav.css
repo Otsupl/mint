@@ -133,16 +133,17 @@
     transition: 0.5s;
     padding: 0;
     padding-top: 83px;
-    margin: 0;
+	margin: 0;
 }
 #menu li
 {
 	list-style-type:none;
 }
 #menu a {
+	letter-spacing: 2px;
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: calc(20px + 1.5vw);
+    font-size: calc(10px + 1.2vw);
     display: block;
     transition: 0.5s;
 }
@@ -198,7 +199,7 @@
 	#menu a {
 		padding: 0;
 		line-height: 60px;
-		font-size:25px;
+		font-size:calc(15px + 0.4vw);
 	}
 	.nav-small #menu a {
 		font-size:20px;
