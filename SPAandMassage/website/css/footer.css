@@ -5,12 +5,35 @@ footer
     letter-spacing: 5px;
     text-align: center;
 }
+
+footer a 
+{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+    cursor: pointer;
+}
+footer a:hover
+{
+    color: rgb(145, 145, 145);
+    letter-spacing: 7px;
+}
+
 #wm
 {
-    margin-left: 40px;
+    display: block;
+    width: 100%;
 }
 
 footer i
 {
     font-size: 20px;
 }
+
+@media only screen and (min-width: 992px) {
+    #wm
+    {
+        margin-left: 40px;
+        display: inline;
+    }
+  }
