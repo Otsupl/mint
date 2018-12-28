@@ -9,6 +9,7 @@ h1
   font-weight: 400;
   letter-spacing: 2px;
 }
+
 #tags
 {
     color: rgba(0, 0, 0, 0);
@@ -39,9 +40,13 @@ h1
   margin-top: calc(35vh - 12vw);
   font-size: calc(10px + 1.5vw + 0.3vh);
 }
-#iwtp
+.iwtp
 {
   color: rgba(255, 201, 130, 0.55);
+}
+.orange
+{
+  color: rgb(255, 159, 32);
 }
 #discover
 {
@@ -86,6 +91,11 @@ h1
     font-size: calc(20px + 1vw);
     mix-blend-mode: soft-light;
 }
+#welcometxt2
+{
+  color: rgba(187, 185, 185, 0.555);
+  font-size: calc(20px + 1vw);
+}
 #welcomepgh
 {
     text-align: center;
@@ -119,7 +129,7 @@ h1
   background-size: cover;
   background-position: center;
   text-align: center;
-  font-size: calc(28px + 1.8vw);
+  font-size: calc(18px + 1.5vw);
 }
 .welcome p
 {
@@ -159,7 +169,6 @@ h1
   background-size: cover;
   text-align: center;
   color: white;
-  margin-top: 50px;
   padding-top: 10px;
 }
 #newsletter h1
@@ -201,6 +210,11 @@ h1
 /* Small devices (portrait tablets, landscape phones, 640px and up) */
 @media only screen and (min-width: 640px) {
 
+  .welcome
+  {
+    font-size: calc(23px + 1.8vw);
+  }
+
 }
 
 /* Medium devices (landscape tablets, 800px and up) */
@@ -223,7 +237,7 @@ h1
   {
     width: 50%;
     float: left;
-    vertical-align: middle;
+    font-size: calc(17px + 1.2vw);
   }
   .welcome img
   {
@@ -247,10 +261,15 @@ h1
   #o1o
   {
     float: right;
+    vertical-align: middle;
+    margin-top: -1%;
   }
   .welcome p
   {
     margin-top:  5%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
   #aboutimg1
   {
