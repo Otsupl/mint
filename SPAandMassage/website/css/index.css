@@ -200,7 +200,7 @@ h1
 }
 #newsletter button[type="submit"]:hover
 {
-  font-size: calc(31px + 4.5vw);
+  font-size: calc(35px + 4.5vw);
   color: rgb(247, 210, 162);
 }
 /* Small devices (large phones, 540px and up) */
