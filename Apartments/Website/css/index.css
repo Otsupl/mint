@@ -1,0 +1,55 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+#bgcontainer
+    {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100vh;
+        background-image: url(../img/mint-bg/mint-fhd.png);
+    }
+#logopillar
+    {
+        width: calc(20vh + 20vw);
+        height: calc(20vh + 20vw);
+        margin: 50px auto 0 auto;
+        border: 0.25px rgb(172, 172, 172) solid;
+        background: white;
+        text-align: center;
+    }
+#logo
+    {
+        height: calc(15vh + 15vw);
+        margin-top:  calc(2.5vh + 2.5vw);
+    }
+#scrolldown
+    {
+        width: 50px;
+        position: absolute;
+        height: 50px;
+        bottom: 20px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 40px;
+        color: rgba(32, 32, 32, 0.445);
+    }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #logopillar
+    {
+        width: 450px;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        margin-top: 0;
+        left: 200px;
+    
+    }
+    
+}
