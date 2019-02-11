@@ -22,14 +22,17 @@
 }
 #navcontainer
 {
-    position: absolute;
-    top: 45vh;
+    width: 172;
+    height: 190px;
     text-align: left;
+    margin-top: 30px;
     left: 50vw;
-    margin-left: -25%;
+    margin-left: calc(50% - 86px);
     color: #323232;
+    font-size: calc(10px + 0.5vw);
     font-family: 'Quicksand', sans-serif;
     font-weight: 500;
+    opacity: 0.9;
     
 }
 #navcontainer ul 
@@ -44,3 +47,16 @@
     margin-bottom: 0;
     width: 100%;
 }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #navcontainer
+    {
+        position: absolute;
+        right: 50px;
+        left: auto;
+        top: 50vh;
+        margin-top: -90px;
+    }
+}
+
+
