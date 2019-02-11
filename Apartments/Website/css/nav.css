@@ -7,11 +7,14 @@
     border-radius: 50%;
     vertical-align: middle;
     margin-right: 10px;
+    transition: 0.3s;
 }
+
 .active
 {
     background: #01b047;
 }
+
 .rod
 {
     height: 20px;
@@ -46,8 +49,21 @@
     display: inline-block;
     margin-bottom: 0;
     width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
 }
-
+#navcontainer ul li:hover
+{
+    color: #6B6969;
+}
+#navcontainer ul li:hover .dot
+{
+    background: #6B6969;
+}
+#navcontainer ul li:hover .active
+{
+    background: #00cc51;
+}
 @media only screen and (min-width: 500px) {
     #navcontainer
     {
