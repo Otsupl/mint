@@ -14,34 +14,37 @@ body
     }
 #logopillar
     {
-        width: calc(20vh + 20vw);
+        width: 100%;
         height: calc(20vh + 20vw);
-        margin: 50px auto 0 auto;
-        border: 0.25px rgb(172, 172, 172) solid;
+        margin-top: 50px;
+        position: absolute;
+        border-top: 0.25px rgb(172, 172, 172) solid;
+        border-bottom: 0.25px rgb(172, 172, 172) solid;
         background: white;
         text-align: center;
+        transition: 0.3s;
     }
 #logo
     {
         height: calc(15vh + 15vw);
         margin-top:  calc(2.5vh + 2.5vw);
+        transition: 0.3s;
     }
 #scrolldown
     {
-        width: 50px;
         position: absolute;
-        height: 50px;
+        text-align: center;
         bottom: 20px;
-        left: 0;
-        right: 0;
-        margin-left: auto;
-        margin-right: auto;
+        width: 40px;
+        left: 50%;
+        margin-left: -23px;
         font-size: 40px;
         color: rgba(32, 32, 32, 0.445);
+        transition: 0.3s;
     }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-    #logopillar
+#logopillar
     {
         width: 450px;
         height: 100vh;
@@ -49,7 +52,15 @@ body
         top: 0;
         margin-top: 0;
         left: 200px;
-    
     }
-    
+#scrolldown
+    {
+        display: none;
+    }
+#logo
+    {
+        height: calc(12vh + 12vw);
+        margin-top: calc(50vh - calc(6vh + 6vw));
+    }
+
 }
