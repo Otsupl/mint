@@ -1,0 +1,46 @@
+.dot
+{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #323232;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.active
+{
+    background: #01b047;
+}
+.rod
+{
+    height: 20px;
+    width: 1px;
+    margin-bottom: -3px;
+    margin-left: 10px;
+    background: #323232;
+}
+#navcontainer
+{
+    position: absolute;
+    top: 45vh;
+    text-align: left;
+    left: 50vw;
+    margin-left: -25%;
+    color: #323232;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    
+}
+#navcontainer ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navcontainer ul li
+{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+}
