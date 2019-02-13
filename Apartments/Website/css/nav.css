@@ -68,7 +68,7 @@
     #navcontainer
     {
         position: absolute;
-        right: 50px;
+        right: calc(10px + 5vw);
         left: auto;
         top: 50vh;
         margin-top: -90px;
