@@ -151,8 +151,8 @@
 
 #menu a:hover {
 	color: rgb(19, 19, 19);
-	letter-spacing: 2.5px;
-    cursor: pointer;
+	/* letter-spacing: 2.5px; */
+	cursor: pointer;
 }
 #menu.nav-open
 {

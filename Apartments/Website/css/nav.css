@@ -1,12 +1,12 @@
 .dot
 {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     display: inline-block;
-    background: #323232;
+    background: #545454;
     border-radius: 50%;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 25px;
     transition: 0.3s;
 }
 
@@ -15,28 +15,16 @@
     background: #01b047;
 }
 
-.rod
-{
-    height: 20px;
-    width: 1px;
-    margin-bottom: -3px;
-    margin-left: 10px;
-    background: #323232;
-}
 #navcontainer
 {
-    width: 172;
-    height: 190px;
     text-align: left;
     margin-top: 30px;
     left: 50vw;
     margin-left: calc(50% - 86px);
-    color: #323232;
-    font-size: calc(10px + 0.5vw);
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 500;
+    color: #3e3e3e;
+    font-size: calc(10px + 0.3vw);
+    font-family: 'quicksand', sans-serif;
     opacity: 0.9;
-    
 }
 #navcontainer ul 
 {
@@ -52,6 +40,18 @@
     transition: 0.3s;
     cursor: pointer;
 }
+#navcontainer ul li::after
+{
+    content: ' ';
+    display: table;
+    height: 25px;
+    width: 1px;
+    margin: 2px 0 0 8px;
+    background: #545454;
+}
+#navcontainer ul li:last-child:after
+    {content:none}
+
 #navcontainer ul li:hover
 {
     color: #6B6969;
@@ -67,11 +67,13 @@
 @media only screen and (min-width: 500px) {
     #navcontainer
     {
-        position: absolute;
-        right: calc(10px + 5vw);
-        left: auto;
-        top: 50vh;
-        margin-top: -90px;
+        position:fixed;
+        right: 6vw;
+        margin: 0;
+        width: calc(100px + 10vw);
+        left: unset;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 }
 
