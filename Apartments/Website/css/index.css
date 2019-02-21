@@ -27,6 +27,14 @@ body
 {
     margin-top:  calc(2.5vh + 2.5vw);
     transition: 0.3s;
+    height: 90%;
+    top: 50%;
+    position: relative;
+    margin: 0;
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+    transform: translate(0,-50%);
 }
 #scrolldown
 {
@@ -57,13 +65,7 @@ body
     #logo
     {
         width: 82%;
-        top: 50%;
-        position: relative;
-        margin: 0;
-        -webkit-transform: translate(0,-50%);
-        -moz-transform: translate(0,-50%);
-        -o-transform: translate(0,-50%);
-        transform: translate(0,-50%);
+        height:unset;
     }
 
 }
