@@ -21,30 +21,43 @@
     <p class="browserupgrade"> Używasz przestarzałej przeglądarki! Prosimy <a href="https://browsehappy.com/">zaktualizować przeglądarkę</a> aby poprawić bezpieczeństwo i </p>
   <![endif]-->
 
-  <div id="bgcontainer">
-    <div id="logopillar"> 
-      <img id="logo" src="img/logo/basic-logo.png"/>
+  <div id="bgcontainercontainer"> 
+    <div id="bgcontainer">
+      <div id="logopillar"> 
+        <img id="logo" src="img/logo/basic-logo.png"/>
+      </div>
+      <nav id="navcontainer">
+        <ul>
+          <li><div class="dot active"></div><span>Home</span></li>
+          <li><div class="dot"></div><span>O inwestycji</span></li>
+          <li><div class="dot"></div><span>Dlaczego Mint</span></li>
+          <li><div class="dot"></div><span>Galeria</span></li>
+          <li><div class="dot"></div><span>Kontakt&nbsp;&&nbsp;lokalizacja</span></li>
+        </ul>
+      </nav>
+      <div id="scrolldown"><i class="fas fa-chevron-down"></i></div>
+  </div>
+</div>
+ 
+  <section id="about">
+    <div class="section-header"><h1>O inwestycji</h1></div>
+    <div id="about_slider">
+      <div class="control" id="abouts_left"></div>
+        <ul>
+          <li><div class='abouts-overlay'><img src='img/rooms/1.jpg' /><div class='abouts-desc'></div></li>
+          <li><div class='abouts-overlay'><img src='img/rooms/2.jpg' /><div class='abouts-desc'></div></li>
+          <li><div class='abouts-overlay'><img src='img/rooms/3.jpg' /><div class='abouts-desc'></div></li>
+        </ul>
+      <div class="control" id="abouts_right"></div>
     </div>
-    <nav id="navcontainer">
-      <ul>
-        <li><div class="dot active"></div>Home</li>
-        <li><div class="dot"></div>O inwestycji</li>
-        <li><div class="dot"></div>Dlaczego Mint</li>
-        <li><div class="dot"></div>Galeria</li>
-        <li><div class="dot"></div>Kontakt & lokalizacja</li>
-      </ul>
-    </nav>
-    <div id="scrolldown"><i class="fas fa-chevron-down"></i></div>
-  </div>
-  <div id="about">
-    
-  </div>
+  </section>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/nav.js"></script>
   <!-- Google Analytics, ZMIENIĆ ID STRONY-->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
