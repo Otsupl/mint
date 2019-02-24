@@ -80,7 +80,7 @@ body
     content: '';
     height: 1px;
     width: calc(85px + 8vw);
-    background: #00CC51;
+    background: rgba(0, 204, 82, 0.411);
     position: relative;
     margin: auto;
     margin-top: -15px;
@@ -137,9 +137,19 @@ body
     width: 80vw;
     margin: auto;
 }
+#about_building::after
+{
+    display: table;
+    content: '';
+    clear: both;
+}
+#about_building_img
+{
+    height: calc(80vw /1.618);
+}
 #about_building_p
 {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: calc(10px + 1.1vw);
     font-family: 'Quicksand', sans-serif;
     color: #727272;
@@ -150,13 +160,13 @@ body
     width: 100%;
     height: 100%;
 }
-#about_building_img::after
+#about_building_p::after
 {
     content: '';
     display: table;
     width: 70vw;
     height: 1px;
-    background: #00CC51;
+    background: rgba(0, 204, 82, 0.411);
     margin: 30px auto auto auto;
 }
 @media only screen and (min-width: 500px) {
@@ -201,5 +211,31 @@ body
         height: calc(20vw / 1.618);
         margin-right: calc(10vw / 3);
         float: left;
-    }   
+    } 
+    #about_building
+    {
+        width: 80vw;
+        margin: auto;
+    }
+    #about_building_img
+    {
+        width: 40vw;
+        height: calc(40vw / 1.618);
+        margin-right: 10vw;
+    }
+    #about_building_p
+    {
+        width: 30vw;
+        margin: auto;
+        margin-top: calc(10vw / 1.618);
+        vertical-align: middle;
+    }
+    #about_building_img, #about_building_p
+    {
+        float: left;
+    } 
+    #about_building_p::after
+    {
+        display: none;
+    }
 }
