@@ -67,7 +67,7 @@ body
 .section-header h1
 {
     font-weight: 400 !important;
-    font-size: calc(15px + 1.1vw);
+    font-size: calc(20px + 1.1vw);
 }
 .section-header h2
 {
