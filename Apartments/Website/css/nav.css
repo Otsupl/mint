@@ -61,6 +61,25 @@
 {
     background: #6B6969;
 }
+#navcontainer ul li::before
+{
+    content: attr(text);
+    display: inline-block;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:3px 8px 1px 8px;
+    border-radius:10px;
+    position: absolute;
+    right:calc(100% + 20px);
+    opacity:0;
+    transition:0.5s;
+    visibility:hidden;
+    color: #3e3e3e;
+}
+#navcontainer.nav-container-scrolled ul li:hover::before
+{
+    visibility:visible;
+    opacity:1;
+}
 #navcontainer ul li:hover .active
 {
     background: #00cc51;
