@@ -56,11 +56,12 @@ body
 /* FURTHER DOWN */
 .section-header
 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'quicksand_light', sans-serif;
     color: #727272;
     height: calc(80px + 3.5vw);
     line-height: calc(80px + 3.5vw);
-    width: 100%;
+    width: 70vw;
+    margin: auto;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -68,13 +69,13 @@ body
 .section-header h1
 {
     font-weight: 400 !important;
-    font-size: calc(20px + 1.1vw);
+    font-size: calc(25px + 1.3vw);
     margin: 0;
 }
 .section-header h2
 {
     font-weight: 400 !important;
-    font-size: calc(10px + 1.1vw);
+    font-size: calc(15px + 1.1vw);
     margin: 0;
 }
 .underscored::after
@@ -86,13 +87,13 @@ body
     background: rgba(0, 204, 82, 0.411);
     position: relative;
     margin: auto;
-    margin-top: calc(-20px + 2.5vw);
+    margin-top: calc(-10px + 1vw);
 }
 #about_slider
 {
     width: 70vw;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 #about_slider::after
 {
@@ -154,8 +155,8 @@ body
 #about_building_p
 {
     margin-top: 50px;
-    font-size: calc(10px + 1.1vw);
-    font-family: 'Quicksand', sans-serif;
+    font-size: calc(12px + 1.1vw);
+    font-family: 'quicksand_light', sans-serif;
     color: #727272;
     text-align: center;
 }
@@ -175,6 +176,24 @@ body
     margin: 30px auto auto auto;
 }
 */
+
+
+/*whyus*/
+.whyus-p,.whyus-p-lone
+{
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    font-size: calc(12px + 1.1vw);
+    font-family: 'quicksand_light',sans-serif;
+    font-weight: 300;
+    margin-bottom: 80px;
+    color: #727272;
+}
+.whyus-p-header
+{
+    font-size: calc(15px + 1.1vw);
+}
 @media only screen and (min-width: 500px) {
     #logopillar
     {
