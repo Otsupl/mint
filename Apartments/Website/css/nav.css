@@ -17,6 +17,7 @@
 
 #navcontainer
 {
+    z-index:100;
     text-align: left;
     margin-top: 30px;
     left: 50vw;
@@ -24,8 +25,7 @@
     color: #3e3e3e;
     font-size: calc(10px + 0.4vw);
     font-family: 'Quicksand', sans-serif;
-    opacity: 0.9;
-    transition: 0.4s;
+    transition: 1s ease-in-out;/*animacja jazdy po scrollu*/
 }
 #navcontainer ul 
 {
@@ -64,6 +64,13 @@
 #navcontainer ul li:hover .active
 {
     background: #00cc51;
+}
+
+/*animacja nava*/
+#navcontainer.nav-container-scrolled
+{
+    left: unset;
+    right: calc(-100px - 10vw + 40px);/* -szerokość containera + szerokość kropek*/
 }
 @media only screen and (min-width: 500px) {
     #navcontainer
