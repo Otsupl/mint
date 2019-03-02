@@ -181,10 +181,10 @@ body
 /*whyus*/
 .whyus-p,.whyus-p-lone
 {
-    width: 80vw;
+    width: 75vw;
     margin: auto;
     text-align: center;
-    font-size: calc(12px + 1.1vw);
+    font-size: calc(15px + 0.7vw);
     font-family: 'quicksand_light',sans-serif;
     font-weight: 300;
     margin-bottom: 80px;
@@ -192,8 +192,33 @@ body
 }
 .whyus-p-header
 {
-    font-size: calc(15px + 1.1vw);
+    font-size: calc(18px + 1.1vw);
 }
+/* PHOTOS */
+#photos
+ {
+    width: 85vw;
+    margin: auto;
+    line-height: 0;
+    -webkit-column-count: 5;
+    -webkit-column-gap:   0px;
+    -moz-column-count:    5;
+    -moz-column-gap:      0px;
+    column-count:         5;
+    column-gap:           0px;
+ }
+ #photos img 
+ {
+   width: 100% !important;
+   height: auto !important;
+   opacity: 0.8;
+   transition: 0.4s;
+   cursor: pointer;
+ }
+ #photos img:hover
+ {
+     opacity: 1;
+ }
 @media only screen and (min-width: 500px) {
     #logopillar
     {
@@ -212,6 +237,37 @@ body
     {
         width: 82%;
         height:unset;
+    }
+    .whyus-p
+    {
+        width: 50%;
+        float: left;
+    }
+    .whyus-p p 
+    {
+        width: 60%;
+        margin: auto;
+    }
+    .whyus-p::after
+    {
+        display: table;
+        content: '';
+        clear: both;
+    }
+    .whyus-p-lone p
+    {
+        width: 50%;
+        margin: auto;
+    }
+    #whyus_upper
+    {
+        margin-top: 80px;
+    }
+    #whyus_upper::after
+    {
+        display: table;
+        content: '';
+        margin-bottom: 40px; 
     }
 
 }
@@ -262,3 +318,33 @@ body
         display: none;
     }
 }
+/*poprawiajki galerii zdjęć */
+
+@media (max-width: 1200px) {
+    #photos {
+    -moz-column-count:    4;
+    -webkit-column-count: 4;
+    column-count:         4;
+    }
+  }
+  @media (max-width: 1000px) {
+    #photos {
+    -moz-column-count:    3;
+    -webkit-column-count: 3;
+    column-count:         3;
+    }
+  }
+  @media (max-width: 800px) {
+    #photos {
+    -moz-column-count:    2;
+    -webkit-column-count: 2;
+    column-count:         2;
+    }
+  }
+  @media (max-width: 400px) {
+    #photos {
+    -moz-column-count:    1;
+    -webkit-column-count: 1;
+    column-count:         1;
+    }
+  }
