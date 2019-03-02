@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
   </div>
 </div>
  
-  <section id="about">
+  <section id="about" data-aos="fade-up" data-aos-duration="3000">
     <div class="section-header underscored"><h1>O inwestycji</h1></div>
     <div id="about_slider">
       <div class="control" id="abouts_left"></div>
@@ -56,11 +57,11 @@
       <div id="about_building_p"><p>Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est.</p></div>
     </div>
   </section>
-  <section id="whyus">
+  <section id="whyus" data-aos="fade-up" data-aos-duration="3000">
     <div class="section-header underscored"><h1>Dlaczego Mint?</h1></div>
     <div id="whyus_upper">
       <div class="whyus-p">
-        <div class="whyus-p-header">Dolor sit.</div>
+        <div class="whyus-p-header" >Dolor sit.</div>
         <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessit atibus saepe eveniet maiores alias conse</p>
       </div>
       <div class="whyus-p">
@@ -68,15 +69,27 @@
         <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio</p>
       </div>
   </div>
-    <div class="whyus-p-lone">
+    <div class="whyus-p-lone" data-aos="fade-up" data-aos-duration="2000">
       <div class="whyus-p-header">Unde omnis.</div>
       <p>Et harum quidem rerum facilis est et expedita distinctio. </p>
     </div>
   </section>
-  <div class="section-header underscored"><h1>Galeria</h1></div>
-  <section id="photos">
+  <section id="photos" data-aos="fade-up" data-aos-duration="3000">
     <div id="gallery"></div>
   </section>
+  <footer>
+    <div id="footer_logo" class="underscored"><img src='img/logo/notext-logo.png'></div>
+    <div class="contactinfo"><a href="tel:+48564564564">564-564-564</a></div>
+    <div class="contactinfo"><a href="mailto:contact@mint-apartments.pl">contact@mint-apartments.pl</a></div>
+    <div id="footer_map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2965.0824050173574!2d-93.63905729999999!3d41.998507000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sWebFilings%2C+University+Boulevard%2C+Ames%2C+IA!5e0!3m2!1sen!2sus!4v1390839289319" width="100%" height="100%" frameborder="0" style="border:0"></iframe>
+    <div id="watermark">Design by <a href='https://otsu.pl'>Otsu.pl</a></div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
