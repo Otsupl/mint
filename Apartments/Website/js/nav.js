@@ -9,8 +9,13 @@ $(document).ready(function()
 
   var sections = ['home', 'about', 'whyus', 'photos', 'contact'];
   for(var i=0; i<sections.length; i++)
-    $("#dot_"+sections[i]).parent().click({id: i}, scrollTo);
-    
+  {
+    $("#dot_"+sections[i]).parent().click({id: i}, function(event){
+      event.preventDefault();
+      scrollTo(event)
+    });
+  }
+
   function scrollTo(event)
   {
     $('html, body').animate({
@@ -24,12 +29,12 @@ function onScrollNav()
 
   if (scrollTop >= 10) 
   {
-    $('#navcontainer ul span').fadeOut(600);
+    $('#navcontainer ul a').fadeOut(600);
     $('#navcontainer').addClass('nav-container-scrolled');
   } 
   else if (scrollTop < 10) 
   {
-    $('#navcontainer ul span').fadeIn(800);
+    $('#navcontainer ul a').fadeIn(800);
     $('#navcontainer').removeClass('nav-container-scrolled');
   } 
 
