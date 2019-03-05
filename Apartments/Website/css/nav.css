@@ -25,9 +25,8 @@
     font-family: 'Quicksand', sans-serif;
     transition: 1s ease-in-out;/*animacja jazdy po scrollu*/
     width: calc(130px + 10vw);
-
+    top: calc(20vh + 20vw + 50px + 30px);/*height loga + margin loga + margin nava*/
     right:calc(50vw - 65px - 5vw);/*50vw - width/2*/
-    margin-top:30px;
 }
 #navcontainer a
 {
@@ -95,6 +94,8 @@
 #navcontainer.nav-container-scrolled
 {
     right: calc(-100px - 10vw + 15px);/* -szerokość containera + szerokość kropek z marginem*/
+    top:50%;
+    transform:translate(0,-50%);
 }
 @media only screen and (min-width: 500px) {
     #navcontainer
