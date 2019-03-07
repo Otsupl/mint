@@ -18,15 +18,16 @@
 #navcontainer
 {
     z-index:100;
-    position:fixed;
+    position: absolute;
     text-align: left;
     color: #3e3e3e;
     font-size: calc(10px + 0.4vw);
     font-family: 'Quicksand', sans-serif;
-    transition: 1s ease-in-out;/*animacja jazdy po scrollu*/
     width: calc(130px + 10vw);
-    top: calc(20vh + 20vw + 50px + 30px);/*height loga + margin loga + margin nava*/
-    right:calc(50vw - 65px - 5vw);/*50vw - width/2*/
+
+    right: calc(50vw - 65px - 5vw); /*wyśrodkowanie po ustawieniu fixed*/
+    transition: right 1s ease-in-out;/*animacja jazdy po scrollu*/
+    margin: 30px 0 0 0;
 }
 #navcontainer a
 {
@@ -93,13 +94,16 @@
 
 #navcontainer.nav-container-scrolled
 {
-    right: calc(-100px - 10vw + 15px);/* -szerokość containera + szerokość kropek z marginem*/
+    position: fixed;
+    margin:0;
+    right: calc(-130px - 10vw + 40px);/* -szerokość containera + szerokość kropek z marginem*/
     top:50%;
     transform:translate(0,-50%);
 }
 @media only screen and (min-width: 500px) {
     #navcontainer
     {
+        position:fixed;
         right: 6vw;
         margin: 0;
         top: 50%;

@@ -23,23 +23,43 @@ $(document).ready(function()
     }, 2000);
   }
 });
+
 function onScrollNav()
 {
   scrollTop = $(window).scrollTop();
-
-  if (scrollTop >= 10) 
+  var vw = $(window).width();
+  var vh = $(window).height();
+  if(vw < 500) //mobilka
   {
-    $('#navcontainer ul a').fadeOut(600);
-    $('#navcontainer').addClass('nav-container-scrolled');
-  } 
-  else if (scrollTop < 10) 
+    //if (środek ekranu (+2px dla pewności)) jest niżej niż (środek nava)
+    if (scrollTop + vh/2 +2 >= $('#navcontainer').offset().top + $('#navcontainer').height()/2) 
+    {
+      $('#navcontainer ul a').fadeOut(600);
+      $('#navcontainer').addClass('nav-container-scrolled');
+    } 
+    //if (góra nava -2px dla pewności) <= (miejsce gdzie powinna być góra nava na początku)(czyli wysokość loga + marginy)
+    if ($('#navcontainer').offset().top - 2 <= 0.2*vh + 0.2*vw + 80) 
+    {
+      $('#navcontainer ul a').fadeIn(800);
+      $('#navcontainer').removeClass('nav-container-scrolled');
+    } 
+  }
+  else //desktop
   {
-    $('#navcontainer ul a').fadeIn(800);
-    $('#navcontainer').removeClass('nav-container-scrolled');
-  } 
+    if (scrollTop >= 10) 
+    {
+      $('#navcontainer ul a').fadeOut(600);
+      $('#navcontainer').addClass('nav-container-scrolled');
+    } 
+    else if (scrollTop < 10) 
+    {
+      $('#navcontainer ul a').fadeIn(800);
+      $('#navcontainer').removeClass('nav-container-scrolled');
+    } 
+  }
 
   /*ifami najszybciej*/
-  var vhx50 = 0.5*$(window).height();
+  var vhx50 = 0.5*vh;
   if(scrollTop < $('#about').offset().top - vhx50)
     {$('.active').removeClass('active'); $('#dot_home').addClass('active');}
   else if(scrollTop < $('#whyus').offset().top - vhx50)
