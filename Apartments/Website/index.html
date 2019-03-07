@@ -97,6 +97,11 @@
   <script src="js/photos.js"></script>
   <!-- Google Analytics, ZMIENIĆ ID STRONY-->
   <script>
+  $(window).on("load", function()
+  {
+    $("#bgcontainer").height($(window).height());
+  });
+
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
