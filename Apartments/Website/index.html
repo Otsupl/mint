@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="css/gallery.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -73,7 +74,13 @@
     </div>
   </section>
   <section id="photos" data-aos="fade-up" data-aos-duration="3000">
-    <div id="gallery"></div>
+    <div id="main_photo" class="center-img-container">
+    </div>
+    <div id="outer_thumbnails">
+      <div class="photo-arrow"></div>
+      <div id="thumbnails"></div>
+      <div class="photo-arrow"></div>
+    </div>
   </section>
   <footer id="contact">
     <div id="footer_logo" class="underscored"><img src='img/logo/notext-logo.png'></div>
@@ -94,7 +101,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/nav.js"></script>
-  <script src="js/photos.js"></script>
+  <script src="js/gallery.js"></script>
   <!-- Google Analytics, ZMIENIĆ ID STRONY-->
   <script>
   $(window).on("load", function()

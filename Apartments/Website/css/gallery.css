@@ -1,0 +1,37 @@
+#main_photo
+{
+    width:calc(60vw);
+    margin: 0 auto;
+    height:calc(60vw / 1.618);
+    overflow:hidden;
+}
+#outer_thumbnails
+{
+    height:100px;
+    width: 100%;
+}
+#outer_thumbnails::after
+{
+    content: '';
+    display: table;
+}
+.photo-arrow
+{
+    float:left;
+    width:calc(20px);
+    height: 100px;
+}
+#thumbnails
+{
+    float:left;
+    height:100px;
+    width: calc(100% - 40px);
+    overflow:hidden;
+}
+#thumbnails>div
+{
+    height:100px;
+    display:inline-block;
+    width:161px;
+    margin:0 20px;
+}
