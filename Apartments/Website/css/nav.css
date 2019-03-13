@@ -10,7 +10,7 @@
     transition: 0.3s;
 }
 
-.active
+.dot.active
 {
     background: #01b047;
 }

@@ -1,10 +1,9 @@
-body
-{
+body {
     margin: 0;
     padding: 0;
 }
-#bgcontainer
-{
+
+#bgcontainer {
     width: 100%;
     position: absolute;
     left: 0;
@@ -12,13 +11,13 @@ body
     height: 100vh;
     background-image: url(../img/mint-bg/mint-fhd.png);
 }
-#home
-{
+
+#home {
     width: 100%;
     height: 100vh;
 }
-#logopillar
-{
+
+#logopillar {
     width: 100%;
     height: calc(20vh + 20vw);
     margin-top: 50px;
@@ -28,9 +27,9 @@ body
     text-align: center;
     transition: 0.3s;
 }
-#logo
-{
-    margin-top:  calc(2.5vh + 2.5vw);
+
+#logo {
+    margin-top: calc(2.5vh + 2.5vw);
     transition: 0.3s;
     height: 90%;
     top: 50%;
@@ -41,8 +40,8 @@ body
     -o-transform: translate(0,-50%);
     transform: translate(0,-50%);
 }
-#scrolldown
-{
+
+#scrolldown {
     position: absolute;
     text-align: center;
     bottom: 20px;
@@ -53,9 +52,9 @@ body
     color: rgba(32, 32, 32, 0.445);
     transition: 0.3s;
 }
+
 /* FURTHER DOWN */
-.section-header
-{
+.section-header {
     font-family: 'quicksand_light', sans-serif;
     color: #727272;
     height: calc(80px + 3.5vw);
@@ -66,20 +65,20 @@ body
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.section-header h1
-{
+
+.section-header h1 {
     font-weight: 400 !important;
     font-size: calc(25px + 1.3vw);
     margin: 0;
 }
-.section-header h2
-{
+
+.section-header h2 {
     font-weight: 400 !important;
     font-size: calc(15px + 1.1vw);
     margin: 0;
 }
-.underscored::after
-{
+
+.underscored::after {
     display: table;
     content: '';
     height: 1px;
@@ -89,43 +88,43 @@ body
     margin: auto;
     margin-top: calc(-10px + 1vw);
 }
-#about_slider
-{
+
+#about_slider {
     width: 70vw;
     margin: auto;
     margin-top: 40px;
 }
-#about_slider::after
-{
+
+#about_slider::after {
     content: '';
     display: table;
     clear: both;
 }
-#about_slider ul
-{
+
+#about_slider ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#about_slider ul li 
-{
+
+#about_slider ul li {
     margin: 0;
     padding: 0;
 }
-#about_slider ul li img
-{
+
+#about_slider ul li img {
     width: 100%;
     height: 100%;
 }
-.abouts-overlay
-{
+
+.abouts-overlay {
     width: 70vw;
     height: calc(70vw / 1.618);
     margin-bottom: 20px;
     cursor: pointer;
 }
-.abouts-desc
-{
+
+.abouts-desc {
     position: relative;
     height: calc(50px + 1vw);
     margin-top: calc(-50px - 1vw);
@@ -137,34 +136,35 @@ body
     text-align: center;
     transition: 0.5s;
 }
-#about_building_img, #about_building_p
-{
+
+#about_building_img, #about_building_p {
     width: 80vw;
     margin: auto;
 }
-#about_building::after
-{
+
+#about_building::after {
     display: table;
     content: '';
     clear: both;
 }
-#about_building_img
-{
+
+#about_building_img {
     height: calc(80vw /1.618);
 }
-#about_building_p
-{
+
+#about_building_p {
     margin-top: 50px;
     font-size: calc(12px + 1.1vw);
     font-family: 'quicksand_light', sans-serif;
     color: #727272;
     text-align: center;
 }
-#about_building_img img 
-{
+
+#about_building_img img {
     width: 100%;
     height: 100%;
 }
+
 /*
 #about_building_p::after
 {
@@ -176,11 +176,8 @@ body
     margin: 30px auto auto auto;
 }
 */
-
-
 /*whyus*/
-.whyus-p,.whyus-p-lone
-{
+.whyus-p,.whyus-p-lone {
     width: 75vw;
     margin: auto;
     text-align: center;
@@ -190,63 +187,89 @@ body
     margin-bottom: 80px;
     color: #727272;
 }
-.whyus-p-header
-{
+
+.whyus-p-header {
     font-size: calc(18px + 1.1vw);
 }
- /* STOPKA */
-    footer 
-    {
-        padding: 30px;
-    }
-    #footer_logo
-    {
-        text-align: center;
-    }
-    #footer_logo img
-    {
-        width: 80px;
-        padding: 20px;
-    }
-    .contactinfo
-    {
-        text-align: center;
-        margin-top: 40px;
-    }
-    .contactinfo a
-    {
-        text-decoration: none;
-        color: #727272;
-        font-family: 'quicksand_light',sans-serif;
-        font-size: calc(20px + 1.2vw);
-    }
-    .contactinfo:nth-of-type(3) a
-    {
-        font-size: calc(12px + 1.2vw);
-    }
-    #footer_map
-    {
-        height: 300px;
-        margin-top: 40px;
-    }
-    #watermark
-    {
-        text-align: center;
-        height: 100px;
-        line-height: 100px;
-        font-family: 'quicksand_light',sans-serif;
-        font-size: calc(9px + 1vw);
-        color: #727272;
-    }
-    #watermark a 
-    {
-        text-decoration: none;
-        color: rgba(0, 204, 82, 0.411);
 
-    }
+/*photos*/
+#gallery_container
+{
+    width:calc(90vw);
+    margin:0 auto;
+}
+.lSSlideWrapper
+{
+    width:calc(55vw);
+    margin:0 auto;
+    height:calc(32vw);
+}
+#slider li
+{
+    height:100%!important;
+}
+#slider img
+{
+    min-height: 100%;
+    min-width: 100%;
+    height: 100%;/*tylko dla poziomych zdjęć, jeżeli też chcemy dla pionowych,*/
+                    /*trzeba dodać nową klasę i sprawdzać proporcje jsem*/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* STOPKA */
+footer {
+    padding: 30px;
+}
+
+#footer_logo {
+    text-align: center;
+}
+
+#footer_logo img {
+    width: 80px;
+    padding: 20px;
+}
+
+.contactinfo {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contactinfo a {
+    text-decoration: none;
+    color: #727272;
+    font-family: 'quicksand_light',sans-serif;
+    font-size: calc(20px + 1.2vw);
+}
+
+.contactinfo:nth-of-type(3) a {
+    font-size: calc(12px + 1.2vw);
+}
+
+#footer_map {
+    height: 300px;
+    margin-top: 40px;
+}
+
+#watermark {
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    font-family: 'quicksand_light',sans-serif;
+    font-size: calc(9px + 1vw);
+    color: #727272;
+}
+
+#watermark a {
+    text-decoration: none;
+    color: rgba(0, 204, 82, 0.411);
+}
+
 @media only screen and (min-width: 500px) {
-    #logopillar
-    {
+    #logopillar {
         width: calc(120px + 19.5vw);
         height: 100vh;
         position: absolute;
@@ -254,106 +277,104 @@ body
         margin-top: 0;
         left: 11vw;
     }
-    #scrolldown
-    {
+
+    #scrolldown {
         display: none;
     }
-    #logo
-    {
+
+    #logo {
         width: 82%;
-        height:unset;
+        height: unset;
     }
-    .whyus-p
-    {
+
+    .whyus-p {
         width: 50%;
         float: left;
     }
-    .whyus-p p 
-    {
+
+    .whyus-p p {
         width: 60%;
         margin: auto;
     }
-    .whyus-p::after
-    {
+
+    .whyus-p::after {
         display: table;
         content: '';
         clear: both;
     }
-    .whyus-p-lone p
-    {
+
+    .whyus-p-lone p {
         width: 50%;
         margin: auto;
     }
-    #whyus_upper
-    {
+
+    #whyus_upper {
         margin-top: 80px;
     }
-    #whyus_upper::after
-    {
+
+    #whyus_upper::after {
         display: table;
         content: '';
-        margin-bottom: 40px; 
+        margin-bottom: 40px;
     }
-
 }
+
 @media only screen and (min-width: 992px) {
-    .abouts-overlay
-    {
+    .abouts-overlay {
         width: 20vw;
         height: calc(20vw / 1.618);
         margin-right: calc(10vw / 3);
         margin-bottom: 0;
         float: left;
-    } 
-    .abouts-desc
-    {
+    }
+
+    .abouts-desc {
         height: 0;
         margin-top: 0;
     }
-    .abouts-overlay:hover .abouts-desc
-    {
+
+    .abouts-overlay:hover .abouts-desc {
         height: calc(50px + 1vw);
         margin-top: calc(-50px - 1vw);
     }
-    #about_building
-    {
+
+    #about_building {
         width: 80vw;
         margin: auto;
     }
-    #about_building_img
-    {
+
+    #about_building_img {
         width: 40vw;
         height: calc(40vw / 1.618);
         margin-right: 10vw;
     }
-    #about_building_p
-    {
+
+    #about_building_p {
         width: 30vw;
         margin: auto;
         margin-top: calc(10vw / 1.618);
         vertical-align: middle;
         text-align: justify;
     }
-    #about_building_img, #about_building_p
-    {
+
+    #about_building_img, #about_building_p {
         float: left;
-    } 
-    #about_building_p::after
-    {
-        display: none;
-    }
-    /*stopka */
-    .contactinfo a
-    {
-        transition: 0.4s;
-    }
-    .contactinfo a:hover
-    {
-        color: #aaaaaa;
-    }
-    #watermark a:hover 
-    {
-        color: rgba(40, 214, 110, 0.5);
     }
 
+    #about_building_p::after {
+        display: none;
+    }
+
+    /*stopka */
+    .contactinfo a {
+        transition: 0.4s;
+    }
+
+    .contactinfo a:hover {
+        color: #aaaaaa;
+    }
+
+    #watermark a:hover {
+        color: rgba(40, 214, 110, 0.5);
+    }
 }
