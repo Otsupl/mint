@@ -277,7 +277,10 @@ footer {
 @media only screen and (min-width: 500px) {
     #logopillar {
         width: calc(120px + 19.5vw);
-        height: 100vh;
+        height: calc(100vh - 0.25px);
+        border-left: 0.25px rgb(172, 172, 172) solid;
+        border-right: 0.25px rgb(172, 172, 172) solid;
+        border-top: none;
         position: absolute;
         top: 0;
         margin-top: 0;
