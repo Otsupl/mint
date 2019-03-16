@@ -164,14 +164,14 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/nav.js"></script>
-        <script src="js/lightslider.min.js"></script>
+        <script src="js/lightslider.js"></script>
         <!-- Google Analytics, ZMIENIĆ ID STRONY-->
         <script>
             var sliderek = 0;
             $(document).ready(function() {
                 sliderek = $("#slider").lightSlider({
                     loop: true,
-                    thumbItem: 3,
+                    thumbItem: 5,
                     slideMargin: 50,
                     galleryMargin: 40,
                     item: 1,
@@ -191,7 +191,7 @@
                 //usuwamy slider i robimy cały od nowa (jest to konieczne przez bugi z szerokością slidów po zmianie szerokości ekranu)
                 sliderek = $("#slider").lightSlider({
                     loop: true,
-                    thumbItem: 3,
+                    thumbItem: 5,
                     slideMargin: 50,
                     galleryMargin: 40,
                     item: 1,
