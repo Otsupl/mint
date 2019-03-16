@@ -15,38 +15,6 @@ html {
     font-size: 1em;
     line-height: 1.4;
 }
-@font-face {
-    font-family: 'quicksand_bold';
-    src: url('../fonts/quicksand/quicksand-bold-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand/quicksand-bold-webfont.woff') format('woff'),
-       url('../fonts/quicksand/Quicksand-Bold.ttf')  format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'quicksand_light';
-    src: url('../fonts/quicksand/quicksand-light-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand/quicksand-light-webfont.woff') format('woff'),
-       url('../fonts/quicksand/Quicksand-Light.ttf')  format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'quicksand';
-    src: url('../fonts/quicksand/quicksand-medium-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand/quicksand-medium-webfont.woff') format('woff'),
-       url('../fonts/quicksand/Quicksand-Medium.ttf')  format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'quicksand_regular';
-    src: url('../fonts/quicksand/quicksand-regular-webfont.woff2') format('woff2'),
-         url('../fonts/quicksand/quicksand-regular-webfont.woff') format('woff'),
-       url('../fonts/quicksand/Quicksand-Regular.ttf')  format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*sprawia, że można wyśrodkować zdjęcie tak samo jak by było tłem diva*/
 .center-img-container
