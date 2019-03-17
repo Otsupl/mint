@@ -215,8 +215,8 @@ body {
     min-height: 100%;
     min-width: 100%;
     height: 100%;
-    /*tylko dla poziomych zdjęć, jeżeli też chcemy dla pionowych,*/
-    /*trzeba dodać nową klasę i sprawdzać proporcje jsem*/
+    /*tylko dla poziomych zdjÄ™Ä‡, jeÅ¼eli teÅ¼ chcemy dla pionowych,*/
+    /*trzeba dodaÄ‡ nowÄ… klasÄ™ i sprawdzaÄ‡ proporcje jsem*/
     position: relative;
     top: 50%;
     left: 50%;
@@ -346,6 +346,7 @@ footer {
     #about_building {
         width: 80vw;
         margin: auto;
+        height: calc(40vw / 1.618);
     }
 
     #about_building_img {
@@ -357,13 +358,14 @@ footer {
     #about_building_p {
         width: 30vw;
         margin: auto;
-        margin-top: calc(10vw / 1.618);
-        vertical-align: middle;
-        text-align: justify;
+        text-align: left;
     }
 
     #about_building_img, #about_building_p {
         float: left;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
     }
 
     #about_building_p::after {
