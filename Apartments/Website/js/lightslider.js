@@ -341,7 +341,7 @@
             pager: function () {
                 var $this = this;
                 refresh.createPager = function () {
-                    thumbWidth = ($('.lSSlideOuter').width()  - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
+                    thumbWidth = ($el.parent().parent().width()  - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
                     var $children = $slide.find('.lslide');
                     var length = $slide.find('.lslide').length;
                     var i = 0,
@@ -619,10 +619,10 @@
                     position = 0;
                     break;
                 case 'middle':
-                    position = ($('.lSSlideOuter').width()  / 2) - (thumbWidth / 2);
+                    position = ($el.parent().parent().width()  / 2) - (thumbWidth / 2);
                     break;
                 case 'right':
-                    position = $('.lSSlideOuter').width()  - thumbWidth;
+                    position = $el.parent().parent().width()  - thumbWidth;
                 }
                 var sc = scene - $el.find('.clone.left').length;
                 var $pager = $slide.parent().find('.lSPager');
@@ -634,8 +634,8 @@
                     }
                 }
                 var thumbSlide = sc * ((thumbWidth + settings.thumbMargin)) - (position);
-                if ((thumbSlide + $('.lSSlideOuter').width() ) > pagerWidth) {
-                    thumbSlide = pagerWidth - $('.lSSlideOuter').width()  - settings.thumbMargin;
+                if ((thumbSlide + $el.parent().parent().width() ) > pagerWidth) {
+                    thumbSlide = pagerWidth - $el.parent().parent().width()  - settings.thumbMargin;
                 }
                 if (thumbSlide < 0) {
                     thumbSlide = 0;
