@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="css/nav.css">
         <link rel="stylesheet" href="css/index.css">
         <link type="text/css" rel="stylesheet" href="css/lightslider.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css"/>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&amp;subset=latin-ext" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
@@ -173,6 +174,7 @@
         <script src="js/main.js"></script>
         <script src="js/nav.js"></script>
         <script src="js/lightslider.js"></script>
+        <script src="js/lightgallery.min.js"></script>
         <!-- Google Analytics, ZMIENIĆ ID STRONY-->
         <script>
             var sliderek = 0;
@@ -200,7 +202,12 @@
                         keyPress: true,
                         gallery: true,
                         enableTouch: true,
-                        enableDrag: false
+                        enableDrag: false,
+                        onSliderLoad: function(el) {
+                            el.lightGallery({
+                                selector: '#slider .lslide'
+                            });
+                        }
                     });
                 } else if (winWid < 800) {
                     sliderek = $("#slider").lightSlider({
@@ -216,7 +223,12 @@
                         keyPress: true,
                         gallery: true,
                         enableTouch: true,
-                        enableDrag: false
+                        enableDrag: false,
+                        onSliderLoad: function(el) {
+                            el.lightGallery({
+                                selector: '#slider .lslide'
+                            });
+                        }
                     });
                 } else {
                     sliderek = $("#slider").lightSlider({
@@ -232,7 +244,12 @@
                         keyPress: true,
                         gallery: true,
                         enableTouch: true,
-                        enableDrag: false
+                        enableDrag: false,
+                        onSliderLoad: function(el) {
+                            el.lightGallery({
+                                selector: '#slider .lslide'
+                            });
+                        }
                     });
                 }
             }
