@@ -341,7 +341,7 @@
             pager: function () {
                 var $this = this;
                 refresh.createPager = function () {
-                    thumbWidth = (windowW*0.9 - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
+                    thumbWidth = ($('.lSSlideOuter').width()  - ((settings.thumbItem * (settings.thumbMargin)) - settings.thumbMargin)) / settings.thumbItem;
                     var $children = $slide.find('.lslide');
                     var length = $slide.find('.lslide').length;
                     var i = 0,
@@ -619,10 +619,10 @@
                     position = 0;
                     break;
                 case 'middle':
-                    position = (windowW*0.9 / 2) - (thumbWidth / 2);
+                    position = ($('.lSSlideOuter').width()  / 2) - (thumbWidth / 2);
                     break;
                 case 'right':
-                    position = windowW*0.9 - thumbWidth;
+                    position = $('.lSSlideOuter').width()  - thumbWidth;
                 }
                 var sc = scene - $el.find('.clone.left').length;
                 var $pager = $slide.parent().find('.lSPager');
@@ -634,8 +634,8 @@
                     }
                 }
                 var thumbSlide = sc * ((thumbWidth + settings.thumbMargin)) - (position);
-                if ((thumbSlide + windowW*0.9) > pagerWidth) {
-                    thumbSlide = pagerWidth - windowW*0.9 - settings.thumbMargin;
+                if ((thumbSlide + $('.lSSlideOuter').width() ) > pagerWidth) {
+                    thumbSlide = pagerWidth - $('.lSSlideOuter').width()  - settings.thumbMargin;
                 }
                 if (thumbSlide < 0) {
                     thumbSlide = 0;
@@ -1128,16 +1128,6 @@
         setTimeout(function () {
             settings.onSliderLoad.call(this, $el);
         }, 10);
-        $(window).on('resize orientationchange', function (e) {
-            setTimeout(function () {
-                if (e.preventDefault) {
-                    e.preventDefault();
-                } else {
-                    e.returnValue = false;
-                }
-                refresh.init();
-            }, 200);
-        });
         return this;
     };
 }(jQuery));

@@ -193,6 +193,7 @@ body {
 /*photos*/
 #gallery_container {
     width: calc(90vw);
+    max-width: calc(100vw - 90px);
     margin: 0 auto;
 }
 
@@ -345,6 +346,7 @@ footer {
 
     #about_building {
         width: 80vw;
+        max-width: calc(100vw - 90px);
         margin: auto;
         height: calc(40vw / 1.618);
     }

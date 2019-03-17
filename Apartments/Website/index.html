@@ -81,14 +81,14 @@
                 <div class="control" id="abouts_right"></div>
             </div>
             <div class="section-header">
-                <h2>Szczegóły&nbsp;mają&nbsp;znaczenie.</h2>
+                <h2>Szczegóły &nbsp;mają&nbsp;znaczenie.</h2>
             </div>
             <div id="about_building">
                 <div id="about_building_img">
                     <img src='img/building/fullres.jpg'/>
                 </div>
                 <div id="about_building_p">
-                    <p>Usytuowanie w cichej i&nbsp;spokojnej okolicy ukoi Twoje&nbsp;zmysły. Bliskość natury zapewni odpoczynek od&nbsp;zabieganego społeczeństwa i&nbsp;zainspiruje do&nbsp;działania.</p>
+                    <p>Usytuowanie w cichej i &nbsp;spokojnej okolicy ukoi Twoje &nbsp;zmysły. Bliskość natury zapewni odpoczynek od &nbsp;zabieganego społeczeństwa i &nbsp;zainspiruje do &nbsp;działania.</p>
                 </div>
             </div>
         </section>
@@ -169,43 +169,65 @@
         <script>
             var sliderek = 0;
             $(document).ready(function() {
-                sliderek = $("#slider").lightSlider({
-                    loop: true,
-                    thumbItem: 5,
-                    slideMargin: 50,
-                    galleryMargin: 40,
-                    item: 1,
-                    auto: true,
-                    thumbMargin: 50,
-                    speed: 1500,
-                    pause: 5000,
-                    keyPress: true,
-                    gallery: true,
-                    enableTouch: true,
-                    enableDrag: false
-                });
+                createOrRefreshSlider();
             });
             $(window).bind('resizeEnd', function() {
-                //do something, window hasn't changed size in 500ms
                 sliderek.destroy();
-                //usuwamy slider i robimy cały od nowa (jest to konieczne przez bugi z szerokością slidów po zmianie szerokości ekranu)
-                sliderek = $("#slider").lightSlider({
-                    loop: true,
-                    thumbItem: 5,
-                    slideMargin: 50,
-                    galleryMargin: 40,
-                    item: 1,
-                    auto: true,
-                    thumbMargin: 50,
-                    speed: 1500,
-                    pause: 5000,
-                    keyPress: true,
-                    gallery: true,
-                    enableTouch: true,
-                    enableDrag: false
-                });
-                console.log("odpalaaaaam");
+                createOrRefreshSlider();
             });
+            function createOrRefreshSlider() {
+                winWid = $(window).width();
+                //usuwamy slider i robimy cały od nowa (jest to konieczne przez bugi z szerokością slidów po zmianie szerokości ekranu)
+                if (winWid < 600) {
+                    sliderek = $("#slider").lightSlider({
+                        loop: true,
+                        thumbItem: 3,
+                        slideMargin: 40,
+                        galleryMargin: 20,
+                        item: 1,
+                        auto: true,
+                        thumbMargin: 15,
+                        speed: 1500,
+                        pause: 5000,
+                        keyPress: true,
+                        gallery: true,
+                        enableTouch: true,
+                        enableDrag: false
+                    });
+                } else if (winWid < 800) {
+                    sliderek = $("#slider").lightSlider({
+                        loop: true,
+                        thumbItem: 4,
+                        slideMargin: 50,
+                        galleryMargin: 40,
+                        item: 1,
+                        auto: true,
+                        thumbMargin: 20,
+                        speed: 1500,
+                        pause: 5000,
+                        keyPress: true,
+                        gallery: true,
+                        enableTouch: true,
+                        enableDrag: false
+                    });
+                } else {
+                    sliderek = $("#slider").lightSlider({
+                        loop: true,
+                        thumbItem: 5,
+                        slideMargin: 50,
+                        galleryMargin: 40,
+                        item: 1,
+                        auto: true,
+                        thumbMargin: 50,
+                        speed: 1500,
+                        pause: 5000,
+                        keyPress: true,
+                        gallery: true,
+                        enableTouch: true,
+                        enableDrag: false
+                    });
+                }
+            }
             $(window).resize(function() {
                 //łapanie na resize i odpalanie dopiero 0.5s po ostatnim
                 if (this.resizeTO)
@@ -222,6 +244,7 @@
             ga.l = +new Date;
             ga('create', 'UA-XXXXX-Y', 'auto');
             ga('send', 'pageview')
+            /**/
         </script>
         <script src="https://www.google-analytics.com/analytics.js" async defer></script>
     </body>
