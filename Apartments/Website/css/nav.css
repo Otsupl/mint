@@ -100,7 +100,7 @@
     top:50%;
     transform:translate(0,-50%);
 }
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     #navcontainer
     {
         position:fixed;
