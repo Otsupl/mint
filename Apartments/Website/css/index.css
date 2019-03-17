@@ -1,3 +1,8 @@
+body > section, body > footer
+{
+    max-width: calc(100vw - 100px);
+    margin: 0 auto;
+}
 body {
     margin: 0;
     padding: 0;
@@ -191,12 +196,6 @@ body {
 }
 
 /*photos*/
-#gallery_container {
-    width: calc(90vw);
-    max-width: calc(100vw - 90px);
-    margin: 0 auto;
-}
-
 .lSSlideWrapper {
     width: calc(55vw);
     margin: 0 auto;
@@ -272,6 +271,10 @@ footer {
 }
 
 @media only screen and (min-width: 500px) {
+    body > section, body > footer
+    {
+        max-width: calc(100vw - 160px);
+    }
     #logopillar {
         width: calc(120px + 19.5vw);
         height: calc(100vh - 0.25px);

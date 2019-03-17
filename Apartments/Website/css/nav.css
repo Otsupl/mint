@@ -111,7 +111,7 @@
     }
     #navcontainer.nav-container-scrolled
     {
-        right: calc(-100px - 10vw + 40px);/* -szerokość containera + szerokość kropek z marginem*/
+        right: calc(-130px - 10vw + 60px);/* -szerokość containera + szerokość kropek z marginem*/
     }
 }
 
