@@ -35,11 +35,11 @@
                         </li>
                         <li text="O&nbsp;inwestycji">
                             <div id="dot_about" class="dot"></div>
-                            <a href="#about">O &nbsp;inwestycji</a>
+                            <a href="#about">O&nbsp;inwestycji</a>
                         </li>
                         <li text="Dlaczego&nbsp;Mint">
                             <div id="dot_whyus" class="dot"></div>
-                            <a href="#whyus">Dlaczego &nbsp;Mint</a>
+                            <a href="#whyus">Dlaczego&nbsp;Mint</a>
                         </li>
                         <li text="Galeria">
                             <div id="dot_photos" class="dot"></div>
@@ -47,7 +47,7 @@
                         </li>
                         <li text="Kontakt&nbsp;&&nbsp;lokalizacja">
                             <div id="dot_contact" class="dot"></div>
-                            <a href="#contact">Kontakt &nbsp;&&nbsp;lokalizacja</a>
+                            <a href="#contact">Kontakt&nbsp;&&nbsp;lokalizacja</a>
                         </li>
                     </ul>
                 </nav>
@@ -60,21 +60,26 @@
             <div class="section-header underscored">
                 <h1>O inwestycji</h1>
             </div>
-            <div id="about_slider">
-                <ul>
-                    <li>
-                        <div class='abouts-overlay'>
-                            <img src='img/rooms/1.jpg'/>
+            <div id="about_slider_container">
+                <ul id="about_slider">
+                    <li data-src="img/rooms/1.jpg">
+                            <img src='img/rooms/min/1.jpg'/>
                             <div class='abouts-desc'>Lorem ipsum</div>
                     </li>
-                    <li>
-                        <div class='abouts-overlay'>
-                            <img src='img/rooms/2.jpg'/>
+                    <li data-src="img/rooms/2.jpg">
+                            <img src='img/rooms/min/2.jpg'/>
                             <div class='abouts-desc'>Dolor sit</div>
                     </li>
-                    <li>
-                        <div class='abouts-overlay'>
-                            <img src='img/rooms/3.jpg'/>
+                    <li data-src="img/rooms/3.jpg">
+                            <img src='img/rooms/min/3.jpg'/>
+                            <div class='abouts-desc'>Amet maniae</div>
+                    </li>
+                    <li data-src="img/rooms/4.jpg">
+                            <img src='img/rooms/min/4.jpg'/>
+                            <div class='abouts-desc'>Amet maniae</div>
+                    </li>
+                    <li data-src="img/rooms/5.jpg">
+                            <img src='img/rooms/min/5.jpg'/>
                             <div class='abouts-desc'>Amet maniae</div>
                     </li>
                 </ul>
@@ -178,18 +183,24 @@
         <!-- Google Analytics, ZMIENIĆ ID STRONY-->
         <script>
             var sliderek = 0;
+            var about_sliderek = 0;
             $(document).ready(function() {
                 createOrRefreshSlider();
             });
             $(window).bind('resizeEnd', function() {
                 //usuwamy slider i robimy cały od nowa (jest to konieczne przez bugi z szerokością slidów po zmianie szerokości ekranu)
                 sliderek.destroy();
+                about_sliderek.destroy()
                 createOrRefreshSlider();
             });
             function createOrRefreshSlider()
             {
+                about_sliderek = $("#about_slider").lightSlider({
+                        item:3,
+                        pager: false
+                });
                 sliderek = $("#slider").lightSlider({
-                        thumbItem: 5,
+                        thumbItem: 4,
                         slideMargin: 50,
                         item: 1,
                         thumbMargin: 50,
