@@ -170,62 +170,52 @@ body {
 /*TIMELINE*/
 #timeline
 {
-    text-align: center;
+    width:55vw;
+    margin: 0 auto;
+    text-align:center;
+    position: relative;
+    padding-top: 60px;
 }
-#timeline_container
+#timeline .lSPager
 {
-    margin-left: 72px;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:100%;
 }
-.tl-dot 
+#timeline .lSPager li
+{
+    padding: 0;
+}
+#timeline .lSPager li>a
 {
     width: 16px;
     height: 16px;
-    display: inline-block;
     background: #545454;
     border-radius: 50%;
     vertical-align: middle;
-    margin-right: 60px;
     transition: 0.3s;
     cursor: pointer;
 }
-.tl-dot.active, .tl-dot:hover
+#timeline .lSPager li.active>a, #timeline .lSPager li>a:hover
 {
     background: #01b047 !important;
 }
-.tl-dot::after
+#timeline .lSPager li::before /*kreski między guzikami*/
 {
     content: ' ';
     display: table;
     height: 1px;
-    width: 72px;
+    width: calc(55vw / 4 - 6px - 16px);
     background: #545454;
-    margin: 8px 0 0 16px;
+    margin: 0 3px 4px 3px;
+    display:inline-block;
 }
-.tl-dot:last-of-type::after
+#timeline .lSPager li:first-of-type::before
 {
     display: none;
 }
-.milestone
-{
-    height: 150px;
-    margin-top: 50px;
-}
-#m2,#m3,#m4,#m5
-{
-    display: none;
-}
-
-/*
-#about_building_p::after
-{
-    content: '';
-    display: table;
-    width: 70vw;
-    height: 1px;
-    background: rgba(0, 204, 82, 0.411);
-    margin: 30px auto auto auto;
-}
-*/
 /*whyus*/
 .half-p,.half-p-lone {
     width: 75vw;
