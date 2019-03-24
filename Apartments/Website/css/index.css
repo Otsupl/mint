@@ -167,6 +167,53 @@ body {
     width: 100%;
     height: 100%;
 }
+/*TIMELINE*/
+#timeline
+{
+    text-align: center;
+}
+#timeline_container
+{
+    margin-left: 72px;
+}
+.tl-dot 
+{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: #545454;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 60px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.tl-dot.active, .tl-dot:hover
+{
+    background: #01b047 !important;
+}
+.tl-dot::after
+{
+    content: ' ';
+    display: table;
+    height: 1px;
+    width: 72px;
+    background: #545454;
+    margin: 8px 0 0 16px;
+}
+.tl-dot:last-of-type::after
+{
+    display: none;
+}
+.milestone
+{
+    height: 150px;
+    margin-top: 50px;
+}
+#m2,#m3,#m4,#m5
+{
+    display: none;
+}
 
 /*
 #about_building_p::after
@@ -351,6 +398,12 @@ footer {
     .perk-img 
     {
         opacity: 0.7;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .perk-img:hover
+    {
+        opacity: 1;
     }
     .perk-img-right
     {
