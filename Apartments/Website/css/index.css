@@ -174,8 +174,28 @@ body {
     margin: 0 auto;
     text-align:center;
     position: relative;
-    padding-top: 60px;
+    padding-top: 90px;
 }
+#timeline .milestone
+{
+    position:relative;
+}
+#timeline img
+{
+    float:left;
+    width:40%;
+    margin-right:10%;
+}
+#timeline .text
+{
+    float:left;
+    width:50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+#timeline .milestone::after
+{clear:both}
 #timeline .lSPager
 {
     position: absolute;
@@ -187,6 +207,7 @@ body {
 #timeline .lSPager li
 {
     padding: 0;
+    position: relative;
 }
 #timeline .lSPager li>a
 {
@@ -216,6 +237,18 @@ body {
 {
     display: none;
 }
+#timeline .lSPager li::after
+{
+    display:table;
+    margin-top: 5px;
+    left: 8px; /*połowa szerokości kropki*/
+    transform: translate(-50%, 0);
+    position: absolute;
+}
+#timeline .lSPager li:nth-of-type(4)::after {content:'2017'}
+#timeline .lSPager li:nth-of-type(3)::after {content:'2018'}
+#timeline .lSPager li:nth-of-type(2)::after {content:'2019'}
+#timeline .lSPager li:nth-of-type(1)::after {content:'2020'}
 /*whyus*/
 .half-p,.half-p-lone {
     width: 75vw;

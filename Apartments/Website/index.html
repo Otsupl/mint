@@ -122,21 +122,33 @@
         </section>
         <section id="timeline">
                 <ul id="timeline_slider">
-                    <li class="milestone" id="m1">
-                        <div class="milestone-header">Stworzono apartamenty4</div>
-                        <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
-                    </li>
-                    <li class="milestone" id="m2">
-                        <div class="milestone-header">Stworzono apartamenty3</div>
-                        <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                    <li class="milestone" id="m4">
+                        <img src="img/timeline/2020.jpg">
+                        <div class="text">
+                                <div class="milestone-header">Dalsze rozbudowy</div>
+                                <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                        </div>
                     </li>
                     <li class="milestone" id="m3">
-                        <div class="milestone-header">Stworzono apartamenty2</div>
-                        <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                        <img src="img/timeline/2019.jpg">
+                        <div class="text">
+                                <div class="milestone-header">Ukończono pierwszy budynek</div>
+                                <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                        </div>
                     </li>
-                    <li class="milestone" id="m4">
-                            <div class="milestone-header">Stworzono apartamenty1</div>
-                            <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                    <li class="milestone" id="m2">
+                        <img src="img/timeline/2018.jpg">
+                        <div class="text">
+                                <div class="milestone-header">Początek budowy pierwszych apartamentów</div>
+                                <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                        </div>
+                    </li>
+                    <li class="milestone" id="m1">
+                        <img src="img/timeline/2017.jpg">
+                        <div class="text">
+                                <div class="milestone-header">Pomysł</div>
+                                <p>Pierwsze apartamenty zostały oddane do użytku klientów.</p>
+                        </div>
                     </li>
                 </ul>
         </section>
@@ -242,6 +254,8 @@
                         auto: false,
                         rtl: true,
                         galleryMargin: 0,
+                        controls:false,
+                        enableTouch: false,
                         onSliderLoad: function ($el) {}
                 });
                 sliderek = $("#slider").lightSlider({
