@@ -72,13 +72,13 @@ body {
     margin-bottom: 30px;
 }
 
-.section-header h1 {
+.section-header h2 {
     font-weight: 400 !important;
     font-size: calc(25px + 1.3vw);
     margin: 0;
 }
 
-.section-header h2 {
+.section-header h3 {
     font-weight: 400 !important;
     font-size: calc(15px + 1.1vw);
     margin: 0;
@@ -94,11 +94,14 @@ body {
     margin: auto;
     margin-top: calc(-10px + 1vw);
 }
-
+#about .lSSlideWrapper {
+	position: static!important;
+}
 #about_slider_container {
     width: 70vw;
     margin: auto;
     margin-top: 40px;
+    position: relative;
 }
 
 #about_slider_container::after {
@@ -272,7 +275,23 @@ body {
     margin: 0 auto;
     height: calc(32vw);
 }
-
+/*najlepszy sposób żeby zakryć wystające slide'y, ale wysunąć strzałki przy jednoczesnym utrymaniu innej szerokości miniaturek*/
+#photos .lSSlideWrapper::before, #photos .lSSlideWrapper::after {
+    content: '';
+    display: inline-block;
+    height: 105%;
+    width:calc(45vw / 2);
+    left: calc(-45vw / 2);
+    position:absolute;
+    background:white;
+    z-index: 2;
+    transform: translate(0, -2%);
+}
+#photos .lSSlideWrapper::after {
+    left:unset;
+    right: calc(-45vw / 2);
+    transform: translate(0, -97%);
+}
 #slider li {
     height: 100%!important;
     min-width: calc(55vw);
@@ -363,10 +382,13 @@ footer {
         width: 82%;
         height: unset;
     }
-
     .abouts-desc {
         height: 0;
         margin-top: 0;
+    }
+    #about_slider li:hover .abouts-desc {
+        height: calc(50px + 1vw);
+        margin-top: calc(-50px - 1vw);
     }
     .half-p {
         width: 50%;
@@ -396,11 +418,6 @@ footer {
 }
 
 @media only screen and (min-width: 992px) {
-
-    #about_slider li:hover .abouts-desc {
-        height: calc(50px + 1vw);
-        margin-top: calc(-50px - 1vw);
-    }
 
     #about_building, #area_perks {
         width: 80vw;
