@@ -98,7 +98,7 @@
                 </ul>
             </div>
             <div class="section-header">
-                <h3>Szczegóły &nbsp;mają&nbsp;znaczenie.</h3>
+                <h3>Szczegóły&nbsp;mają&nbsp;znaczenie.</h3>
             </div>
             <div id="about_building">
                 <div id="about_building_img">
@@ -113,8 +113,8 @@
                 </div>
                 <div id="area_perks">
                     <div class="perk">
-                        <div class="perk-p perk-p-right"><p>Budynek położony jest jedynie Xkm od Manufaktury - wizytówki Łodzi. Muzea, restauracje, sklepy i wiele innych atrakcji na wyciągnięcie ręki.</p></div>
                         <div class="perk-img perk-img-right"><img src="./img/perks/manu.jpg"/> </div>
+                        <div class="perk-p perk-p-right"><p>Budynek położony jest jedynie Xkm od Manufaktury - wizytówki Łodzi. Muzea, restauracje, sklepy i wiele innych atrakcji na wyciągnięcie ręki.</p></div>
                     </div>
                     <div class="perk">
                         <div class="perk-img"><img src="./img/perks/las.jpg"/> </div>
@@ -249,12 +249,18 @@
             {
                 about_sliderek = $("#about_slider").lightSlider({
                         item:3,
-                        pager: false
+                        pager: false,
+                        responsive:[
+                                {breakpoint:600,
+                                        settings:{
+                                                item:1
+                                        }
+                                }
+                        ]
                 });
                 timeline_sliderek = $("#timeline_slider").lightSlider({
                         item:1,
                         slideMargin: 100,
-                        auto: false,
                         rtl: true,
                         galleryMargin: 0,
                         controls:false,
@@ -263,6 +269,7 @@
                 });
                 sliderek = $("#slider").lightSlider({
                         thumbItem: 4,
+                        auto:true,
                         slideMargin: 50,
                         item: 1,
                         thumbMargin: 50,

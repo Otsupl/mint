@@ -1,13 +1,13 @@
 body > section, body > footer
 {
-    max-width: calc(100vw - 110px);
+    max-width: calc(100vw - 100px);
     margin: 0 auto;
 }
 body {
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #bgcontainer {
@@ -63,25 +63,27 @@ body {
 /* FURTHER DOWN */
 .section-header {
     color: #727272;
-    height: calc(80px + 3.5vw);
-    line-height: calc(80px + 3.5vw);
-    width: 70vw;
-    margin: auto;
+    height: calc(70px + 3.5vw);
+    margin: 3vw 0;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    position:relative;
+}
+.section-header h2, .section-header h3{
+    font-weight: 400;
+    margin: 0;
+    position: absolute;
+    width: 100vw;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
 }
 
 .section-header h2 {
-    font-weight: 400 !important;
     font-size: calc(25px + 1.3vw);
-    margin: 0;
 }
 
 .section-header h3 {
-    font-weight: 400 !important;
     font-size: calc(15px + 1.1vw);
-    margin: 0;
 }
 
 .underscored::after {
@@ -98,9 +100,8 @@ body {
 	position: static!important;
 }
 #about_slider_container {
-    width: 70vw;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 0;
     position: relative;
 }
 
@@ -111,8 +112,8 @@ body {
 }
 
 #about_slider li {
-    height: calc( (70vw + 30px) / 3 / 1.618);
     cursor: pointer;
+    height: calc( (100vw - 100px) / 1.618);
     padding: 0;
     overflow: hidden;
 }
@@ -138,12 +139,7 @@ body {
     transition: 0.5s;
 }
 
-#about_building_img, #about_building_p, .perk-p, .perk-img {
-    width: 80%;
-    margin: auto;
-}
-
-#about_building::after, #area_perks::after {
+#about_building::after, #area_perks .perk::after {
     display: table;
     content: '';
     clear: both;
@@ -156,25 +152,30 @@ body {
 }
 
 #about_building_img, .perk-img  {
-    height: calc(80% /1.618);
+    height: calc(100vw / 1.618);
 }
 
 #about_building_p, .perk-p  {
-    margin-top: 50px;
     font-size: calc(12px + 1.1vw);
     color: #727272;
     text-align: center;
+    margin-top: 40px;
+}
+.perk-p-right
+{
+    
+margin-bottom: 40px;
 }
 
 #about_building_img img, .perk-img img {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: calc(100vw / 1.618);
+    position: absolute;
+    left: 0;
 }
 /*TIMELINE*/
 #timeline
 {
-    width:55vw;
-    margin: 0 auto;
     text-align:center;
     position: relative;
     padding-top: 90px;
@@ -184,19 +185,9 @@ body {
     position:relative;
 }
 #timeline img
-{
-    float:left;
-    width:40%;
-    margin-right:10%;
-}
+{width: 90%;}
 #timeline .text
-{
-    float:left;
-    width:50%;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-}
+{margin-top: 25px;}
 #timeline .milestone::after
 {clear:both}
 #timeline .lSPager
@@ -254,16 +245,15 @@ body {
 #timeline .lSPager li:nth-of-type(1)::after {content:'2020'}
 /*whyus*/
 .half-p,.half-p-lone {
-    width: 75vw;
     margin: auto;
+    margin-top: 30px;
     text-align: center;
     font-size: calc(13px + 0.7vw);
-    font-weight: 300;
     color: #727272;
 }
 .half-p-lone
 {
-    margin:80px auto;
+    margin: calc(10px + 7vw) auto;
 }
 .half-p-header {
     font-size: calc(15px + 1.1vw);
@@ -271,9 +261,8 @@ body {
 
 /*photos*/
 #photos .lSSlideWrapper {
-    width: calc(55vw);
     margin: 0 auto;
-    height: calc(32vw);
+    height: calc(calc(100vw - 100px) / 1.618);
 }
 /*najlepszy sposób żeby zakryć wystające slide'y, ale wysunąć strzałki przy jednoczesnym utrymaniu innej szerokości miniaturek*/
 #photos .lSSlideWrapper::before, #photos .lSSlideWrapper::after {
@@ -294,7 +283,6 @@ body {
 }
 #slider li {
     height: 100%!important;
-    min-width: calc(55vw);
     cursor: pointer;
 }
 
@@ -310,6 +298,18 @@ body {
     transform: translate(-50%, -50%);
 }
 
+@media only screen and (max-width: 600px) {
+    .lSAction>.lSPrev {
+        left: 10px!important;
+    }
+    .lSAction>.lSNext {
+        right: 10px!important;
+    }
+    .lSAction>a {
+        background-image: url(../img/controls-white.png)!important;
+        opacity: 1!important;
+    }
+}
 /* STOPKA */
 footer {
     padding: 30px;
@@ -362,6 +362,7 @@ footer {
     {
         max-width: calc(100vw - 150px);
     }
+    body{font-weight: 300}
     #logopillar {
         width: calc(120px + 19.5vw);
         height: calc(100vh - 0.25px);
@@ -382,6 +383,13 @@ footer {
         width: 82%;
         height: unset;
     }
+    #about_slider_container {
+        margin-top: 40px;
+        width:70vw;
+    }
+    #about_slider li {
+        height: calc( (70vw + 30px) / 3 / 1.618);
+    }
     .abouts-desc {
         height: 0;
         margin-top: 0;
@@ -390,9 +398,68 @@ footer {
         height: calc(50px + 1vw);
         margin-top: calc(-50px - 1vw);
     }
+    #about_building_img img, .perk-img img {
+        width: 100%;
+        height: 100%;
+    }
+    #about_building, #area_perks {
+        width: 80vw;
+        max-width: calc(100vw - 90px);
+        margin: auto;
+        height: calc(40vw / 1.618);
+    }
+    #area_perks
+    {
+        margin-top: calc(200px + 3.5vw) !important;
+    }
+
+    #about_building_img, .perk-img {
+        width: 40vw;
+        height: calc(40vw / 1.618);
+        margin-right: 10vw;
+        left: unset;
+    }
+    .perk-img 
+    {
+        opacity: 0.7;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .perk-img:hover
+    {
+        opacity: 1;
+    }
+    .perk-img-right
+    {
+        margin-right: 0;
+        margin-left: 10vw;
+        float: right!important;
+    }
+
+    #about_building_p, .perk-p {
+        width: 30vw;
+        margin: auto;
+        text-align: left;
+    }
+    .perk-p-right
+    {
+        text-align: right;
+        float: right!important;
+    }
+
+    #about_building_img, #about_building_p, .perk-img, .perk-p {
+        float: left;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #about_building_p::after, .perk-p::after {
+        display: none;
+    }
     .half-p {
         width: 50%;
         float: left;
+        margin-top: 0;
     }
 
     .half-p p {
@@ -415,62 +482,35 @@ footer {
         margin-bottom: 40px;
         clear: both;
     }
-}
-
-@media only screen and (min-width: 992px) {
-
-    #about_building, #area_perks {
-        width: 80vw;
-        max-width: calc(100vw - 90px);
-        margin: auto;
-        height: calc(40vw / 1.618);
-    }
-    #area_perks
+    #timeline
     {
-        margin-top: calc(200px + 3.5vw) !important;
+        width:55vw;
     }
-
-    #about_building_img, .perk-img {
-        width: 40vw;
-        height: calc(40vw / 1.618);
-        margin-right: 10vw;
-    }
-    .perk-img 
+    #timeline img
     {
-        opacity: 0.7;
-        cursor: pointer;
-        transition: 0.5s;
+        float:left;
+        width:40%;
+        margin-right:10%;
     }
-    .perk-img:hover
+    #timeline .text
     {
-        opacity: 1;
-    }
-    .perk-img-right
-    {
-        margin-right: 0;
-        margin-left: 10vw;
-    }
-
-    #about_building_p, .perk-p {
-        width: 30vw;
-        margin: auto;
-        text-align: left;
-    }
-    .perk-p-right
-    {
-        text-align: right;
-    }
-
-    #about_building_img, #about_building_p, .perk-img, .perk-p {
-        float: left;
-        position: relative;
+        float:left;
+        width:50%;
+        position: absolute;
         top: 50%;
         transform: translate(0, -50%);
     }
-    #about_building_p::after, .perk-p::after {
-        display: none;
+    #photos .lSSlideWrapper {
+        width: calc(55vw);
+        height: calc(32vw);
     }
+    #slider li {
+        height: 100%!important;
+        min-width: calc(55vw);
+    }
+}
 
+@media only screen and (min-width: 992px) {
     /*stopka */
     .contactinfo a {
         transition: 0.4s;
