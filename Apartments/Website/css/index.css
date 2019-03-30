@@ -93,9 +93,10 @@ body {
     height: 1px;
     width: calc(85px + 8vw);
     background: rgba(0, 204, 82, 0.411);
-    position: relative;
-    margin: auto;
-    margin-top: calc(-10px + 1vw);
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
 }
 #about .lSSlideWrapper {
 	position: static!important;
