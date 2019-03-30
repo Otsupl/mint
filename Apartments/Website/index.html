@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/index.css">
         <link type="text/css" rel="stylesheet" href="css/lightslider.min.css"/>
         <link type="text/css" rel="stylesheet" href="css/lightgallery.min.css"/>
+        <link type="text/css" rel="stylesheet" href="css/aos.css"/>
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&amp;subset=latin-ext" rel="stylesheet">
     </head>
     <body>
@@ -214,26 +215,25 @@
                 </div>
             </div>
         </footer>
-        <script>
-            AOS.init();
-        </script>
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>
             window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
         </script>
-        <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="js/nav.js"></script>
         <script src="js/lightslider.js"></script>
         <script src="js/lightgallery.min.js"></script>
-        <script src="js/timeline.js"></script>
+        <script src="js/aos.js"></script>
         <!-- Google Analytics, ZMIENIĆ ID STRONY-->
         <script>
             var sliderek = 0;
             var about_sliderek = 0;
             var timeline_sliderek = 0;
             $(document).ready(function() {
+                $('section').add('footer').each(function(){$(this).addClass('aos-area')});
+                var aos_els = $('.section-header>h2').add('.double-paragraph').add('#about_slider_container').add('#about_building').add('.perk-img').add('.perk-p').add('#timeline').add('half-p-lone').add('#gallery_container').add('#contact>*');
+                aos_els.each(function(){$(this).addClass('aos fade-in')});
                 createOrRefreshSlider();
             });
             $(window).bind('resizeEnd', function() {

@@ -411,7 +411,7 @@ footer {
     }
     #area_perks
     {
-        margin-top: calc(200px + 3.5vw) !important;
+        margin-top: calc( (40vw / 1.618 / 2) + 3vw) !important;
     }
 
     #about_building_img, .perk-img {
