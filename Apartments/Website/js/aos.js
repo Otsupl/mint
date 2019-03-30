@@ -1,22 +1,18 @@
 function aos()
 {
-	"use strict";
-	var scrolled = Math.max(window.pageYOffset, document.body.scrollTop, document.documentElement.scrollTop);
-	const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.getElementsByTagName('body')[0].clientHeight;
-	var elements = document.getElementsByClassName('aos');
-	for(let i=0; i< elements.length; i++)
-	{
-		var elementOffset = elements[i].getBoundingClientRect().top + window.scrollY;
-		var elementHeight = elements[i].offsetHeight;
-		if(scrolled + windowHeight > elementOffset + 0.6*elementHeight || scrolled + windowHeight > elementOffset + 0.15*windowHeight)
-			elements[i].classList.add('aos-animate');
+	var scrolled = $(window).scrollTop();
+  	var vh = $(window).height();
+	$('.aos').each(function(){
+		var elOffset = $(this).offset().top;
+		if(scrolled + vh > elOffset + 0.6*$(this).height() || scrolled + vh > elOffset + 0.15*vh)
+			$(this).addClass('aos-animate');
 		else
-			elements[i].classList.remove('aos-animate');
-	}
+			$(this).removeClass('aos-animate');
+	});
 }
-window.addEventListener("load",function(){
+$(document).ready(function(){
 	aos();
 });
-window.addEventListener("scroll",function(){
+$(window).scroll(function(){
 	aos();
 });
