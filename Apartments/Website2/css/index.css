@@ -64,7 +64,7 @@ body {
 
 /* FURTHER DOWN */
 .section-header {
-    color: #ffffff;
+    color: #727272;
     height: calc(70px + 3.5vw);
     margin: 3vw 0;
     text-align: center;
@@ -252,7 +252,7 @@ body {
 /*whyus*/
 .half-p,.half-p-lone {
     margin: auto;
-    margin-top: 30px;
+    margin-top: 45px;
     text-align: center;
     font-size: calc(13px + 0.7vw);
     color: #727272;
