@@ -1,0 +1,118 @@
+.dot
+{
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: #545454;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 25px;
+    transition: 0.3s;
+}
+
+.dot.active
+{
+    background: #01b047;
+}
+
+#navcontainer
+{
+    z-index:100;
+    position: absolute;
+    text-align: left;
+    color: #3e3e3e;
+    font-size: calc(10px + 0.4vw);
+    font-weight: 600 !important;
+    font-family: 'Quicksand', sans-serif;
+    width: calc(140px + 10vw);
+    right: calc(50vw - 70px - 5vw); /*wyśrodkowanie po ustawieniu fixed*/
+    transition: right 1s ease-in-out;/*animacja jazdy po scrollu*/
+    margin: 30px 0 0 0;
+}
+#navcontainer a
+{
+    color: currentColor;
+    text-decoration:none;
+}
+#navcontainer ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#navcontainer ul li
+{
+    display: inline-block;
+    margin-bottom: 0;
+    width: 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#navcontainer ul li::after
+{
+    content: ' ';
+    display: table;
+    height: 25px;
+    width: 1px;
+    margin: 2px 0 0 8px;
+    background: #545454;
+}
+#navcontainer ul li:last-child:after
+    {content:none}
+
+#navcontainer ul li:hover
+{
+    color: #6B6969;
+}
+#navcontainer ul li:hover .dot
+{
+    background: #6B6969;
+}
+#navcontainer ul li::before
+{
+    content: attr(text);
+    display: inline-block;
+    background-color:rgba(255, 255, 255, 0.7);
+    padding:3px 8px 1px 8px;
+    border-radius:10px;
+    position: absolute;
+    right:calc(100% + 20px);
+    opacity:0;
+    transition:0.5s;
+    visibility:hidden;
+    color: #3e3e3e;
+}
+#navcontainer.nav-container-scrolled ul li:hover::before
+{
+    visibility:visible;
+    opacity:1;
+}
+#navcontainer ul li:hover .active
+{
+    background: #00cc51;
+}
+
+#navcontainer.nav-container-scrolled
+{
+    position: fixed;
+    margin:0;
+    right: calc(-130px - 10vw + 40px);/* -szerokość containera + szerokość kropek z marginem*/
+    top:50%;
+    transform:translate(0,-50%);
+}
+@media only screen and (min-width: 600px) {
+    #navcontainer
+    {
+        position:fixed;
+        right: 6vw;
+        margin: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    #navcontainer.nav-container-scrolled
+    {
+        right: calc(-130px - 10vw + 60px);/* -szerokość containera + szerokość kropek z marginem*/
+    }
+}
+
+
