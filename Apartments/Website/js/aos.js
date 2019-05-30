@@ -10,6 +10,9 @@ function aos()
 			$(this).removeClass('aos-animate');
 	});
 }
+$(document).ready(function(){
+	aos();
+});
 $(window).scroll(function(){
 	aos();
 });
