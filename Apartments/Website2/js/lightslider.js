@@ -41,7 +41,7 @@
         responsive: [],
         /* jshint ignore:start */
         onBeforeStart: function ($el) {},
-        onSliderLoad: function ($el) {$el.lightGallery({selector: '#'+$el.attr('id')+' .lslide'})},
+        onSliderLoad: function ($el) {},
         onBeforeSlide: function ($el, scene) {},
         onAfterSlide: function ($el, scene) {},
         onBeforeNextSlide: function ($el, scene) {},
