@@ -362,15 +362,15 @@ AddDefaultCharset utf-8
 
 <IfModule mod_rewrite.c>
 	RewriteEngine On
-	RewriteCond %{HTTPS} !=on
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
-	
-	RewriteCond %{HTTPS} !=on
-	RewriteRule ^(.*)$ https://mint-apartments.pl/$1 [R=301,L]
-	
-    RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
-    RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+    #RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+	#RewriteCond %{HTTPS} !=on
+    #RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
+	#
+	#RewriteCond %{HTTPS} !=on
+	#RewriteRule ^(.*)$ https://mint-apartments.pl/$1 [R=301,L]
+	#
+    #RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+    #RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L]
 	
 	# ----------------------------------------------------------------------
 	#Redirect traffic from pretty links
@@ -528,12 +528,15 @@ AddDefaultCharset utf-8
 
 <FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
 
-    # Apache < 2.3
-    <IfModule !mod_authz_core.c>
-        Order allow,deny
-        Deny from all
-        Satisfy All
-    </IfModule>
+    #!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!
+    #!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! Powoduje błąd 403!!!!!!!!!!!!!!!!!!!!!!
+    # Apache < 2.3 
+    #<IfModule !mod_authz_core.c>
+    #    Order allow,deny
+    #    Deny from all
+    #    Satisfy All
+    #</IfModule>
 
     # Apache ≥ 2.3
     <IfModule mod_authz_core.c>
