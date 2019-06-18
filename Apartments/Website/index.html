@@ -27,6 +27,7 @@
                 <div id="logopillar">
                     <img id="logo" src="img/logo/basic-logo.svg"/>
                 </div>
+                <a id="en_flag_link" href="/en"><img src="img/en-flag.svg"></a>
                 <nav id="navcontainer">
                     <ul>
                         <li text="Home">
@@ -170,6 +171,12 @@
                     </li>
                 </ul>
         </section>
+        <section id="ready_info">
+                <div class="section-header">
+                    <h3>Apartamenty gotowe do użytku</h3>
+                </div>
+                <p>Apartament przy ulicy Łagiewnickiej 278 jest już gotowy do przekazania kluczy pierwszym klientom</p>
+        </section>
         <section id="whyus" >
             <div class="section-header underscored">
                 <h2>Dlaczego Mint?</h2>
@@ -270,7 +277,7 @@
         <script src="js/vendor/modernizr-3.6.0.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script>
-            window.jQuery || document.write('<script src="js/jquery-3.3.1.min.js"><\/script>')
+            window.jQuery || document.write('<script src="js/jquery-3.4.1.slim.min.js"><\/script>')
         </script>
         <script src="js/main.js"></script>
         <script src="js/nav.js"></script>
@@ -283,7 +290,7 @@
             var timeline_sliderek = 0;
             $(document).ready(function() {
                 $('section').add('footer').each(function(){$(this).addClass('aos-area')});
-                var aos_els = $('.section-header>h2').add('.section-header>h3').add('.double-paragraph').add('#about_slider_container').add('#about_building').add('.perk-img').add('.perk-p').add('#timeline').add('.half-p-lone').add('#gallery_container').add('#contact>*');
+                var aos_els = $('.section-header>h2').add('.section-header>h3').add('.double-paragraph').add('#about_slider_container').add('#about_building').add('.perk-img').add('.perk-p').add('#timeline').add('.half-p-lone').add('#gallery_container').add('#contact>*').add('#ready_info p');
                 aos_els.each(function(){$(this).addClass('aos fade-in')});
                 aos();
                 createOrRefreshSlider();

@@ -48,7 +48,23 @@ body {
     -o-transform: translate(0,-50%);
     transform: translate(0,-50%);
 }
-
+#en_flag_link
+{
+    display:block;
+    position:fixed;
+    right:0;
+    top:10px;
+    height:30px;
+    width:30px;
+    padding-right: 10px;
+    background-color:white;
+    border-radius:50% 0 0 50%;
+    overflow:hidden;
+}
+#en_flag_link img
+{
+    height:30px;
+}
 #scrolldown {
     position: absolute;
     text-align: center;
@@ -193,6 +209,10 @@ margin-bottom: 40px;
 {width: 90%;}
 #timeline .text
 {margin-top: 25px;}
+#timeline .text .milestone-header
+{font-size: calc(18px + 0.2vw);}
+#timeline .text p 
+{font-size: calc(16px + 0.2vw);}
 #timeline .milestone::after
 {clear:both}
 #timeline .lSPager

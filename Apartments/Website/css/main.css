@@ -32,7 +32,8 @@ html {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+section p 
+{font-size: calc(12px + 1.1vw);}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
