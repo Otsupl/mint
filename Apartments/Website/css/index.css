@@ -415,14 +415,6 @@ footer {
     #about_slider li {
         height: calc( (70vw + 30px) / 3 / 1.618);
     }
-    .abouts-desc {
-        height: 0;
-        margin-top: 0;
-    }
-    #about_slider li:hover .abouts-desc {
-        height: calc(50px + 1vw);
-        margin-top: calc(-50px - 1vw);
-    }
     #about_building_img img, .perk-img img {
         width: 100%;
         height: 100%;
@@ -446,14 +438,14 @@ footer {
     }
     .perk-img 
     {
-        opacity: 0.7;
+        /*opacity: 0.7;*/
         cursor: pointer;
-        transition: 0.5s;
+        /*transition: 0.5s;*/
     }
-    .perk-img:hover
+    /*.perk-img:hover
     {
         opacity: 1;
-    }
+    }*/
     .perk-img-right
     {
         margin-right: 0;
